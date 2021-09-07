@@ -40,7 +40,8 @@ Volgens recente onderzoek onder gebruikers, heeft dit aangetoond dat de website 
 
 #### Screenshot(s) van de eerste pagina (small screen): 
 home-page 
-<img src="home.png" width="375px" alt="omschrijving van de pagina">
+<img src="images/home" width="375px" alt="omschrijving van de pagina">
+
 
 #### Screenshot(s) van de tweede pagina (small screen):
 hier de naam van de pagina  
