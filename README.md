@@ -38,14 +38,14 @@ Responsive & Surface laag 🕹 🧩
 ### Je opdracht:
 Volgens recente onderzoek onder gebruikers, heeft dit aangetoond dat de website “Andere tijden” niet voor alle gebruikers even aantrekkelijk is en hierdoor kijkers verliest. Wij hebben onderzoek gedaan naar mogelijke herontwerp voor de website, zodat het meer aantrekkelijker wordt voor potentiele doelgroepen doormiddel van het achterhalen wat hen behoeftes en wensen. Hieruit hebben wij een definitief prototype ontworpen die de website Andere tijden helpt met werven van potentiele doelgroepen, en de gebruiker meer mogelijkheden geeft om te surfen op de website. 
 
-#### Screenshot(s) van de eerste pagina (small screen): 
-home-page 
-<img src="images/home.png" width="375px" alt="omschrijving van de pagina">
+#### Screenshot(s) home-pagina (small screen): 
+
+<img src="images/home.png" width="375px" alt="home-page">
 
 
-#### Screenshot(s) van de tweede pagina (small screen):
-hier de naam van de pagina  
-<img src="images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+#### Screenshot(s) home-pagina (small screen):
+ 
+<img src="images/home2.png" width="375px" alt="home-page">
  
 </details>
 
