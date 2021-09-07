@@ -36,14 +36,11 @@ Responsive & Surface laag 🕹 🧩
 <summary>uitwerken voor kick-off werkgroep</summary>
 
 ### Je opdracht:
-/*link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp */
- 
-Volgens recente onderzoek onder gebruikers, heeft dit aangetoond dat de website “Andere tijden” niet voor alle gebruikers even aantrekkelijk is en hierdoor kijkers verliest. Wij hebben onderzoek gedaan naar mogelijke herontwerp voor de website, zodat het meer aantrekkelijker wordt voor potentiele doelgroepen doormiddel van het achterhalen wat hen behoeftes en wensen. Hieruit hebben wij een definitief prototype ontworpen die de website Andere tijden helpt met werven van potentiele doelgroepen, en de gebruiker meer mogelijkheden geeft om te surfen op de website. ![image](https://user-images.githubusercontent.com/90243530/132312912-5164f4ad-bc53-4e84-97ca-642d0a71a605.png)
-
+Volgens recente onderzoek onder gebruikers, heeft dit aangetoond dat de website “Andere tijden” niet voor alle gebruikers even aantrekkelijk is en hierdoor kijkers verliest. Wij hebben onderzoek gedaan naar mogelijke herontwerp voor de website, zodat het meer aantrekkelijker wordt voor potentiele doelgroepen doormiddel van het achterhalen wat hen behoeftes en wensen. Hieruit hebben wij een definitief prototype ontworpen die de website Andere tijden helpt met werven van potentiele doelgroepen, en de gebruiker meer mogelijkheden geeft om te surfen op de website. 
 
 #### Screenshot(s) van de eerste pagina (small screen): 
-Home-page "Andere Tijden" 
-<img src="images/home" width="375px" alt="home-page">
+home-page 
+<img src="home.png" width="375px" alt="omschrijving van de pagina">
 
 #### Screenshot(s) van de tweede pagina (small screen):
 hier de naam van de pagina  
