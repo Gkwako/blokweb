@@ -36,19 +36,21 @@ Responsive & Surface laag 🕹 🧩
 <summary>uitwerken voor kick-off werkgroep</summary>
 
 ### Je opdracht:
-Volgens recente onderzoek onder gebruikers, heeft dit aangetoond dat de website “Andere tijden” niet voor alle gebruikers even aantrekkelijk is en hierdoor kijkers verliest. Wij hebben onderzoek gedaan naar mogelijke herontwerp voor de website, zodat het meer aantrekkelijker wordt voor potentiele doelgroepen doormiddel van het achterhalen wat hen behoeftes en wensen. Hieruit hebben wij een definitief prototype ontworpen die de website Andere tijden helpt met werven van potentiele doelgroepen, en de gebruiker meer mogelijkheden geeft om te surfen op de website. 
+Voor deze opdracht ga ik de bekendste museum "de Louvre" na maken omdat ik afgelopen zomer hier geweest ben en een super leuke tijd had gehad. De reden waarom deze museum mij aansprak is door de Mona Lisa, wat ik al een tijdje wilde gaan zien. De website heeft een mooie layout waar ik goed mee kan werken en heeft ook zijn eigen moeilijkheidsgraad, ben benieuwd hoe dit gaat aflopen...
+
+<a href="https://www.louvre.fr/en">link Louvre</a>
 
 #### Screenshot(s) home-pagina (small screen): 
+Hieronder zie je een screenshot van de home page van de website op z'n geheel. 
 
-<img src="images/home.png" width="375px" alt="home-page">
+<img src="images/louvre1.png" width="340px" alt="home-page">
 
 
-#### Screenshot(s) home-pagina (small screen):
- 
-<img src="images/home2.png" width="375px" alt="home-page">
+#### Screenshot(s) mona-lisa-page (small screen):
+ Hier is de 2e screenshot, ik heb gekozen om de mona lisa home page na te gaan maken als 2e pagina. 
+<img src="images/louvre2.png" width="340px" alt="home-page">
  
 </details>
-
 
 
 
@@ -58,14 +60,35 @@ Volgens recente onderzoek onder gebruikers, heeft dit aangetoond dat de website 
 <details>
 <summary>uitwerken na afloop 2e werkgroep</summary>
 
-### de hele pagina: 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+### de hele pagina 1 & 2: 
+Hier is de volledige pagina te zien op een mobiele formaat.
+<img src="images/louvrePage.png" width="375px" alt="louvre-pagina">
+<img src="images/louvrePage2.png" width="375px" alt="louvre-pagina">
 
-### dynamisch deel (bijv menu): 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+### breakdown onderdelen: 
+Deze pagina's heb ik HTML onderdelen geven om zo het werk makkelijker te verdelen in het programma. 
+<img src="images/louvre3.png" width="375px" alt="louvre-pagina">
+<img src="images/louvre4.png" width="375px" alt="louvre-pagina">
 
-### wellicht nog een dynamisch deel (bijv filter): 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+### ongeïnteresseerde onderdelen 1: 
+Deze zijn de onderdelen die ik niet mee gaan nemen.
+<img src="images/louvp12.png" width="375px" alt="breakdown van een dynamisch deel">
+<img src="images/louvp11.png" width="375px" alt="breakdown van nog een dynamisch deel">
+
+<img src="images/louvp14.png" width="375px" alt="breakdown van een dynamisch deel">
+<img src="images/louvp13.png" width="375px" alt="breakdown van nog een dynamisch deel">
+
+<img src="images/louvp15.png" width="375px" alt="breakdown van nog een dynamisch deel">
+
+### ongeïnteresseerde onderdelen 2: 
+<img src="images/louvp22.png" width="375px" alt="breakdown van een dynamisch deel">
+<img src="images/louvp211.png" width="375px" alt="breakdown van nog een dynamisch deel">
+
+<img src="images/louvp23.png" width="375px" alt="breakdown van een dynamisch deel">
+<img src="images/louvp24.png" width="375px" alt="breakdown van nog een dynamisch deel">
+
+<img src="images/louvp25.png" width="375px" alt="breakdown van nog een dynamisch deel">
+
 
 </details>
 
