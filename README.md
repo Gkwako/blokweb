@@ -93,6 +93,9 @@ Deze zijn de onderdelen die ik niet mee gaan nemen.
 </details>
 
 
+## Huisstijl analyse (week 2)
+<img src="images/huisstijl.png" width="375px" alt="huisstijl">
+
 
 
 
