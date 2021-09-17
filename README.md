@@ -105,6 +105,19 @@ Deze zijn de onderdelen die ik niet mee gaan nemen.
 <summary>uitwerken voor 1e voortgang</summary>
 
 ### Stand van zaken
+Ik ben deze week begonnen aan de navigatiebalk (de header), hieronder zie je de eerste versie van de navigatiebalk:
+
+<img src="images/navv1.png" width="375px" alt="navv1">
+<img src="images/navv1b.png" width="375px" alt="navv1b">
+
+Ik liep op een geven moment wel vast, waardoor ik hulp kreeg van een student assistent en ik heb verder gebruik gemaakt van Youtube. 
+
+Hieronder zie je de 2e versie:
+<img src="images/navv2.png" width="375px" alt="navv2">
+<img src="images/navv2b.png" width="375px" alt="navv2b">
+
+
+
 hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
 
