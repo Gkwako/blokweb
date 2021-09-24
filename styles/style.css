@@ -232,31 +232,6 @@ section:nth-of-type(3) p{
 
 
 
-@media screen and (max-width: 1024px){
-  .nav-links{
-    width: 51%; 
-  }
-
-  .nav-links a{
-    font-size: 13px;
-  }
-
-  .logo{
-    position: absolute;
-    top: 4%;
-    left: 18%;
-  }
-}
-
-
-@media screen and (max-width: 768px){
-  .nav-links{
-    position: absolute;
-    top: 4.5em;
-  }
-}
-
-
 
 
 
