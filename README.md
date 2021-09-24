@@ -43,12 +43,12 @@ Voor deze opdracht ga ik de bekendste museum "de Louvre" na maken omdat ik afgel
 #### Screenshot(s) home-pagina (small screen): 
 Hieronder zie je een screenshot van de home page van de website op z'n geheel. 
 
-<img src="images/louvre1.png" width="340px" alt="home-page">
+<img src="RMimages/louvre1.png" width="340px" alt="home-page">
 
 
 #### Screenshot(s) mona-lisa-page (small screen):
  Hier is de 2e screenshot, ik heb gekozen om de mona lisa home page na te gaan maken als 2e pagina. 
-<img src="images/louvre2.png" width="340px" alt="home-page">
+<img src="RMimages/louvre2.png" width="340px" alt="home-page">
  
 </details>
 
@@ -62,39 +62,39 @@ Hieronder zie je een screenshot van de home page van de website op z'n geheel.
 
 ### de hele pagina 1 & 2: 
 Hier is de volledige pagina te zien op een mobiele formaat.
-<img src="images/louvrePage.png" width="375px" alt="louvre-pagina">
-<img src="images/louvrePage2.png" width="375px" alt="louvre-pagina">
+<img src="RMimages/louvrePage.png" width="375px" alt="louvre-pagina">
+<img src="RMimages/louvrePage2.png" width="375px" alt="louvre-pagina">
 
 ### breakdown onderdelen: 
 Deze pagina's heb ik HTML onderdelen geven om zo het werk makkelijker te verdelen in het programma. 
-<img src="images/louvre3.png" width="375px" alt="louvre-pagina">
-<img src="images/louvre4.png" width="375px" alt="louvre-pagina">
+<img src="RMimages/louvre3.png" width="375px" alt="louvre-pagina">
+<img src="RMimages/louvre4.png" width="375px" alt="louvre-pagina">
 
 ### ongeïnteresseerde onderdelen 1: 
 Deze zijn de onderdelen die ik niet mee gaan nemen.
-<img src="images/louvp12.png" width="375px" alt="breakdown van een dynamisch deel">
-<img src="images/louvp11.png" width="375px" alt="breakdown van nog een dynamisch deel">
+<img src="RMimages/louvp12.png" width="375px" alt="breakdown van een dynamisch deel">
+<img src="RMimages/louvp11.png" width="375px" alt="breakdown van nog een dynamisch deel">
 
-<img src="images/louvp14.png" width="375px" alt="breakdown van een dynamisch deel">
-<img src="images/louvp13.png" width="375px" alt="breakdown van nog een dynamisch deel">
+<img src="RMimages/louvp14.png" width="375px" alt="breakdown van een dynamisch deel">
+<img src="RMimages/louvp13.png" width="375px" alt="breakdown van nog een dynamisch deel">
 
-<img src="images/louvp15.png" width="375px" alt="breakdown van nog een dynamisch deel">
+<img src="RMimages/louvp15.png" width="375px" alt="breakdown van nog een dynamisch deel">
 
 ### ongeïnteresseerde onderdelen 2: 
-<img src="images/louvp22.png" width="375px" alt="breakdown van een dynamisch deel">
-<img src="images/louvp211.png" width="375px" alt="breakdown van nog een dynamisch deel">
+<img src="RMimages/louvp22.png" width="375px" alt="breakdown van een dynamisch deel">
+<img src="RMimages/louvp211.png" width="375px" alt="breakdown van nog een dynamisch deel">
 
-<img src="images/louvp23.png" width="375px" alt="breakdown van een dynamisch deel">
-<img src="images/louvp24.png" width="375px" alt="breakdown van nog een dynamisch deel">
+<img src="RMimages/louvp23.png" width="375px" alt="breakdown van een dynamisch deel">
+<img src="RMimages/louvp24.png" width="375px" alt="breakdown van nog een dynamisch deel">
 
-<img src="images/louvp25.png" width="375px" alt="breakdown van nog een dynamisch deel">
+<img src="RMimages/louvp25.png" width="375px" alt="breakdown van nog een dynamisch deel">
 
 
 </details>
 
 
 ## Huisstijl analyse (week 2)
-<img src="images/huisstijl.png" width="375px" alt="huisstijl">
+<img src="RMimages/huisstijl.png" width="375px" alt="huisstijl">
 
 
 
@@ -107,15 +107,15 @@ Deze zijn de onderdelen die ik niet mee gaan nemen.
 ### Stand van zaken
 Ik ben deze week begonnen aan de navigatiebalk (de header), hieronder zie je de eerste versie van de navigatiebalk:
 
-<img src="images/navv1b.png" width="375px" alt="navv1b">
-<img src="images/navv1.png" width="375px" alt="navv1">
+<img src="RMimages/navv1b.png" width="375px" alt="navv1b">
+<img src="RMimages/navv1.png" width="375px" alt="navv1">
 
 
 Ik liep op een geven moment wel vast, waardoor ik hulp kreeg van een student assistent en ik heb verder gebruik gemaakt van Youtube. 
 
 Hieronder zie je de 2e versie:
-<img src="images/navv2b.png" width="375px" alt="navv2b">
-<img src="images/navv2.png" width="375px" alt="navv2">
+<img src="RMimages/navv2b.png" width="375px" alt="navv2b">
+<img src="RMimages/navv2.png" width="375px" alt="navv2">
 
 
 
@@ -132,12 +132,11 @@ samen met je groepje opstellen
 
 
 ### Verslag van meeting
-hier na afloop snel de uitkomsten van de meeting vastleggen
+Vandaag heb ik mijn voortgang gesprek gehad, hier werd de onderstaande punten besproken waar ik aanpassingen in moet gaan doen. 
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- Minder classes gebruiken, ipv daarvan nth-of-type () gebruiken
+- Hoe de div's worden gebruikt klopt niet, beter ul's gebruiken
+- li moet in een ul zitten en kan dus niet alleen zitten
 
 </details>
 

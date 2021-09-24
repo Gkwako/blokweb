@@ -5,83 +5,232 @@
   padding: 0%;
 }
 
-/* navigatie balken 
+
+/* shortcuts*/
+:root{
+  --p-padding: 2em;
+}
+
+
+
+/* header opmaak */
 header{
   background-color: black;
-  color: white;*/
-  /* display: flex; */
-  /* justify-content: space-around; */
-  /* position: relative;
+  display: flex;
+  height: 10em;
+  width:100%;
+}
+
+
+header.menu{ 
+  position: relative;
   left: 0%;
   top: 0%;
 }
-*/
 
-/* navigatie balken  */
-nav{
+
+li{
+  flex-basis:100%;
+  margin-right:.125em;
+} 
+
+
+
+/* nav opmaak */
+header nav{
   display:flex;
-  flex-wrap:wrap;
-  justify-content: space-around;
+  flex-direction:column;
   align-items: center;
-  background-color: #000000;
-  min-height: 16vh;
+  width: 100%;
 }
 
-/* logo  */
-.logo{
-  color: #ffffff; 
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  font-size: 20px;
-  line-height: 24.96px;
-  text-align: start;
-}
-
-/* navigatie opties */
-.nav-links{
+header nav ul {
   display: flex;
-  position: absolute;
-  top: 5em;
-  justify-content: space-around;
-  width: 39%;
-  
+  justify-content: space-between;
+  width: 100%;
 }
+ 
 
-.nav-links li{
+
+/* ul opmaak  */
+ul{
+  text-decoration: none;
   list-style: none;
 }
 
-.nav-links a{
-  color: #ffffff; 
+
+
+/* hamburger menu opmaak */
+li:nth-of-type(1) img{
+  width: 3.5em;
+  height: 3em;
+}
+
+
+
+/* titel opmaak  */
+ul:nth-of-type(1) li:nth-of-type(2) a{
   text-decoration: none;
-  font-weight: bold;
-  font-size: 17.6067px;
-  letter-spacing: 1.56854px;
-  line-height: 27.4483px;
+  color: white;
+  font-size: 2.5em;
+  position: relative;
+  left: .1.5em;
+  top: -.1em;
+}
+
+
+/* button opmaak  */
+ul:nth-of-type(1) li:nth-of-type(3) button{
+  text-decoration: none;
+  background-color: #008573;
+  color: white;
+  font-size: 1em;
+  padding: 1em;
+  border-radius: 2em;
+  width: 7em;
+}
+
+
+button:first-of-type {
+  padding: 0;
+  border: none;
+} 
+
+
+ 
+
+/*............................................................ */
+/*............................................................ */
+
+
+/* /* home image  */
+section:first-of-type img:first-of-type{
+  width: 100%;
+  height: 34em;
+
+}
+
+
+section:first-of-type {
+  background-color:#f6f6f6 ;
+
 }
 
 
 
-/* burger navigatie  */
-.burger li{
-  width: 0px;
-  height: 115px; 
-  /* background-color: #ffffff;  */
+/* 1e stuk van website (voor pagina met afbeelding)  */
+section:first-of-type h2:first-of-type{
   position: absolute;
-  left: 2%;
-  top: -1%;
+  bottom: 11.5em;
+  color:white; 
+  font: 500 30px/1.27 LouvreSerif,Georgia,Times New Roman,serif;
+  margin: 3rem 5rem;
 }
 
-.burger img{
-  width: 55px;
-  /* display: none; */
+
+/* (book tickets button) */
+section:first-of-type button:first-of-type {
+  background-color: #008573;
+  color: white;
+  font-size: 1em;
+  padding: .7em;
+  border-radius: 2em;
+  width: 8em;
+  position: relative;
+  top: -17em;
+  left: 6.5em;
 }
 
-.burger div{
-  width: 55px;
+
+
+
+
+/*............................................................ */
+/*............................................................ */
+
+
+
+/* 2e stuk van website (info pagina images)*/
+section:nth-of-type(2) img{
+  width: 3em;
+  height: 2.5em;
+  margin-left: 2em;
+  margin-top: .1em;
 }
 
-/* burger navigatie niet zichtbaar */
+
+section:nth-of-type(2) {
+  background-color:#f6f6f6 ;
+}
+
+
+
+h3:first-of-type{
+   color: black;
+   font: 16px/1.5 Montserrat,Verdana,sans-serif;
+   margin: -3rem 5rem;
+   margin-left: 6em;
+ }
+
+
+section:nth-of-type(2) p{
+  font: 400 1em/1.56 Roboto,Open Sans,Arial,Helvetica,sans-serif;
+  font-weight: bolder;
+  margin: 2.5rem 1rem;
+  padding:var(--p-padding);
+}
+
+
+/* link (Find out more) */
+main a{
+  padding:var(--p-padding);
+  color: #000000;
+  margin-left: 1em;
+  margin: 2rem 1rem;
+}
+
+/* moet ook background-color:#f6f6f6 ; */
+
+/* tekst wil niet omhoog */
+hr{
+  margin-top: 4em;
+
+}
+
+/*............................................................ */
+/*............................................................ */
+
+
+
+
+/*  3e stuk van website  */
+section:nth-of-type(3) h2 {
+  margin: 5rem 3rem;
+  font: 400 30px/1.27 LouvreSerif,Georgia,Times New Roman,serif;
+  font-size: 32px;
+}
+
+
+section:nth-of-type(3) img{
+  margin-top: -1em;
+  width: 23.3em;
+  height: 26em;
+  border-radius: 4.5em;
+  padding:var(--p-padding);
+
+} 
+
+
+/*  */
+section:nth-of-type(3) p{
+  font: 400 1em/1.56 Roboto,Open Sans,Arial,Helvetica,sans-serif;
+  font-weight: bolder;
+  margin: 2rem 1rem;
+  padding:var(--p-padding);
+}
+
+
+
 
 @media screen and (max-width: 1024px){
   .nav-links{
@@ -108,42 +257,7 @@ nav{
 }
 
 
-/* home image */
-.s1 img{
-  width: 100%;
-  height: 30em;
-}
-
-/* h2 begin */
-.s1 h2{
-  text-align: center;
-  color: black;
-  font-size: 170%;
-  margin: 1rem 5rem;
-  
-}
 
 
-/* header.menu{ 
-  position: relative;
-  left: 0%;
-  top: 0%;
-}
-*/
 
-/* header button:first-of-type {
-  padding: 0;
-  border: none;
-} */
 
-/* ul{
-  display:flex;
-  flex-wrap:wrap;
-  flex-grow:1;
-} */
-
-/* li{
-  flex-basis:100%;
-  margin-right:.125em;
-  
-} */
