@@ -1,3 +1,8 @@
+
+/******************************/
+/* ALGEMENE CUSTOM OPMAAK */
+/******************************/
+
 /* CSS Document */
 *, *::after, *::before {
   box-sizing:border-box;  
@@ -12,28 +17,30 @@
 }
 
 
+/* opmaak  */
+button {
+  border: none;
+} 
+
+
+/* ul opmaak  */
+ul{
+	text-decoration: none;
+	list-style: none;
+  }
+
+
+
+/******************************/
+/* ******** HEADER ******** */
+/******************************/
 
 /* header opmaak */
 header{
-  background-color: black;
-  display: flex;
-  height: 10em;
-  width:100%;
+  background-color: #000000;
+  height: 9em;
+  padding-top: 0.5em;
 }
-
-
-header.menu{ 
-  position: relative;
-  left: 0%;
-  top: 0%;
-}
-
-
-li{
-  flex-basis:100%;
-  margin-right:.125em;
-} 
-
 
 
 /* nav opmaak */
@@ -44,92 +51,263 @@ header nav{
   width: 100%;
 }
 
-header nav ul {
+
+/* ul opmaak */
+header:first-of-type ul:nth-of-type(2){
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 93%;
 }
- 
 
 
-/* ul opmaak  */
-ul{
+
+/******************************/
+/* ***** HAMBURGER MENU ***** */
+/******************************/
+
+/* /* hamburger menu opmaak  */
+.icon{
+  width: 3.1em;
+  height: 2.7em;
+  margin: .8em -.3em;
+}
+
+
+@media (min-width: 600px) {
+  .icon{
+    margin: .8em -.9em;
+  }
+}
+
+@media (min-width: 1400px) {
+  .icon{
+    margin: .8em -1.5em;
+  }
+}
+
+
+
+/* in de hamburger menu opmaak  */
+.menu {
+  background-color:black;
+  padding-top: 1em;
+  opacity: 0;
+  transform: translateX(-100%);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+}
+
+.visible {
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+
+
+
+/* hoofdtekst opmaak  */
+header ul:nth-of-type(2) li:nth-of-type(2) a{
   text-decoration: none;
-  list-style: none;
-}
-
-
-
-/* hamburger menu opmaak */
-li:nth-of-type(1) img{
-  width: 3.5em;
-  height: 3em;
-}
-
-
-
-/* titel opmaak  */
-ul:nth-of-type(1) li:nth-of-type(2) a{
-  text-decoration: none;
-  color: white;
-  font-size: 2.5em;
+  color: #ffffff;
+  letter-spacing: .1em;
+  font-size: 2em;
   position: relative;
-  left: .1.5em;
-  top: -.1em;
+  right: .9em;
+  bottom: -.55em;
 }
 
 
-/* button opmaak  */
-ul:nth-of-type(1) li:nth-of-type(3) button{
+
+@media (min-width: 450px) {
+  header ul:nth-of-type(2) li:nth-of-type(2) a{
+    right: 2.6em;
+    bottom: -.6em;
+  }
+  
+}
+
+
+@media (min-width: 600px) {
+  header ul:nth-of-type(2) li:nth-of-type(2) a{
+    right: 4.5em;
+  }
+  
+}
+
+
+@media (min-width: 1400px) {
+  header ul:nth-of-type(2) li:nth-of-type(2) a{
+    font-size: 3em;
+    right: -.7em;
+    bottom: -.2em;
+  }
+  
+}
+
+
+
+/* 1e button opmaak  */
+header ul:nth-of-type(2) li:nth-of-type(3) button{
   text-decoration: none;
   background-color: #008573;
-  color: white;
+  color: #ffffff;
   font-size: 1em;
-  padding: 1em;
+  padding: .7em;
   border-radius: 2em;
-  width: 7em;
+  width: 6.5em;
+  margin: 1em 0em 1em;
 }
 
 
-button:first-of-type {
-  padding: 0;
-  border: none;
-} 
-
-
- 
-
-/*............................................................ */
-/*............................................................ */
-
-
-/* /* home image  */
-section:first-of-type img:first-of-type{
-  width: 100%;
-  height: 34em;
-
+@media (min-width: 600px) {
+  header ul:nth-of-type(2) li:nth-of-type(3) button{
+    font-size: 1em;
+    padding: .6em;
+  }
 }
 
 
+@media (min-width: 1400px) {
+  header ul:nth-of-type(2) li:nth-of-type(3) button{
+    margin-top: 1.2em;
+  }
+  
+}
+
+
+
+/******************************/
+/* ***** HEADER 2e stuk ***** */
+/******************************/
+
+/* line opmaak */
+header:first-of-type hr:first-of-type{
+  border-color: gray;
+  width: 21em;
+  border-bottom: 0em;
+}
+
+
+
+@media (min-width: 450px) {
+  header:first-of-type hr:first-of-type{
+    width: 27em;
+  }
+}
+
+@media (min-width: 600px) {
+  header:first-of-type hr:first-of-type{
+    width: 36em;
+  }
+}
+
+
+@media (min-width: 1400px) {
+  header:first-of-type hr:first-of-type{
+    width: 86em;
+  }
+}
+
+
+
+
+/* 2e nav stuk (ul opmaak) */
+header ul:nth-of-type(3){
+  display: flex;
+  justify-content: space-between;
+  width: 65%;
+  margin: .7em 0em 0em;
+  font-size: 1.3em;
+}
+
+
+header ul:nth-of-type(3) a{
+  color:#ffffff;
+  text-decoration: none;
+  font-family: 'Montserrat', Verdana, sans-serif;
+  font-size: 0.77em;
+}
+
+
+
+@media (min-width: 450px) {
+  header ul:nth-of-type(3){
+    width: 45%;
+  }
+}
+
+@media (min-width: 1400px) {
+  header ul:nth-of-type(3){
+    width: 20%;
+  }
+
+header ul:nth-of-type(3) a{
+  font-size: 1em;
+}
+}
+
+
+
+
+/******************************/
+/* **** 1e stuk website ***** */
+/******************************/
+
+/* 1e web-display */
 section:first-of-type {
   background-color:#f6f6f6 ;
+}
 
+
+/* 1e image */
+section:nth-of-type(1) img{
+  width: 100%;
+  height: 34em;
+}
+
+
+@media (min-width: 600px) {
+  section:nth-of-type(1) img{
+    height: 45em;
+  }
+}
+
+
+@media (min-width: 1400px) {
+  section:nth-of-type(1) img{
+    height: 100em;
+  }
 }
 
 
 
-/* 1e stuk van website (voor pagina met afbeelding)  */
-section:first-of-type h2:first-of-type{
+/* 1e h2 */
+.homepage section:nth-of-type(1) h2{
   position: absolute;
   bottom: 11.5em;
   color:white; 
-  font: 500 30px/1.27 LouvreSerif,Georgia,Times New Roman,serif;
-  margin: 3rem 5rem;
+  font: 500 1.88em/1.27 LouvreSerif,Georgia,Times New Roman,serif;
+  margin: 1.7em 2em;
+  margin-left: 3em;
 }
 
 
-/* (book tickets button) */
-section:first-of-type button:first-of-type {
+@media (min-width: 600px) {
+  section:nth-of-type(1) h2{
+    bottom: 9em;
+    margin-left: 3.8em;
+  }
+}
+
+
+
+
+/* 1e button */
+section:nth-of-type(1) button {
   background-color: #008573;
   color: white;
   font-size: 1em;
@@ -137,96 +315,307 @@ section:first-of-type button:first-of-type {
   border-radius: 2em;
   width: 8em;
   position: relative;
-  top: -17em;
-  left: 6.5em;
+  left: 7em;
+  top: -15.5em;
 }
 
 
 
-
-
-/*............................................................ */
-/*............................................................ */
-
-
-
-/* 2e stuk van website (info pagina images)*/
-section:nth-of-type(2) img{
-  width: 3em;
-  height: 2.5em;
-  margin-left: 2em;
-  margin-top: .1em;
+@media (min-width: 600px) {
+  section:nth-of-type(1) button {
+    left: 16.5em;
+    top: -21em;
+  }
+  
 }
 
 
-section:nth-of-type(2) {
+/******************************/
+/* **** 2e stuk website **** */
+/******************************/
+
+/* 2e web-display */
+.homepage section:nth-of-type(2) {
   background-color:#f6f6f6 ;
 }
 
 
+/* 2e info-image */
+.homepage section:nth-of-type(2) img{
+  width: 3em;
+  height: 2.5em;
+  margin-left: 2.9em;
+  margin-top: 1.8em;
+}
 
-h3:first-of-type{
-   color: black;
-   font: 16px/1.5 Montserrat,Verdana,sans-serif;
-   margin: -3rem 5rem;
-   margin-left: 6em;
+
+
+/* 2e (1e h3)*/
+.homepage section:nth-of-type(2) h3{
+   font: 1em/1.5 'Montserrat',Verdana,sans-serif;
+   margin: -3.2rem 5rem;
+   margin-left: 6.7em;
  }
 
 
-section:nth-of-type(2) p{
+/* 2e p tekst*/
+.homepage section:nth-of-type(2) p{
   font: 400 1em/1.56 Roboto,Open Sans,Arial,Helvetica,sans-serif;
   font-weight: bolder;
-  margin: 2.5rem 1rem;
+  margin: 3em 1em -0.5em;
   padding:var(--p-padding);
 }
 
 
-/* link (Find out more) */
-main a{
+/* 2e (Find out more..) link */
+.homepage section:nth-of-type(2) a{
   padding:var(--p-padding);
   color: #000000;
-  margin-left: 1em;
   margin: 2rem 1rem;
 }
 
-/* moet ook background-color:#f6f6f6 ; */
 
-/* tekst wil niet omhoog */
-hr{
+/* 2e hr stuk */
+.homepage section:nth-of-type(2) hr:nth-of-type(1){
+  border-color: rgba(128, 128, 128, 0.349);
   margin-top: 4em;
+  border-bottom: 0em;
 
 }
 
-/*............................................................ */
-/*............................................................ */
 
 
+/******************************/
+/* **** 3e stuk website **** */
+/******************************/
 
-
-/*  3e stuk van website  */
+/*  3e (2e h2)  */
 section:nth-of-type(3) h2 {
-  margin: 5rem 3rem;
-  font: 400 30px/1.27 LouvreSerif,Georgia,Times New Roman,serif;
-  font-size: 32px;
+  margin: 4rem 1.5rem;
+  font: 400 1.5em/1.27 'LouvreSerif',Georgia,Times New Roman,serif;
+  font-size: 2em;
 }
 
 
-section:nth-of-type(3) img{
-  margin-top: -1em;
-  width: 23.3em;
-  height: 26em;
-  border-radius: 4.5em;
-  padding:var(--p-padding);
-
-} 
+/* 3e foto gallery  bron: flexbox oefening*/
+section:nth-of-type(3) ul{
+  display: flex;
+  overflow: auto;
+}
 
 
-/*  */
+section:nth-of-type(3) li{
+  flex-shrink: 0;
+}
+
+
+section:nth-of-type(3) li img{
+  margin: -.4em;
+  width: 20em; 
+  height: 25em;
+  border-radius: 2em;
+  padding:1em;
+}
+
+
+@media (min-width: 600px) {
+  section:nth-of-type(3) li img{
+    width: 38em;
+    height: 50em;
+  }
+  
+}
+
+
+/* 3e h3 */
+section:nth-of-type(3) h3{
+  font: 0.875em	 'Montserrat',Verdana,sans-serif;
+  letter-spacing: .13em;
+  margin: 5.5em 3em 0em;
+  font-weight: bold;
+}
+
+
+/* 3e (2e p ) */
 section:nth-of-type(3) p{
-  font: 400 1em/1.56 Roboto,Open Sans,Arial,Helvetica,sans-serif;
-  font-weight: bolder;
-  margin: 2rem 1rem;
+  font-family:'EB Garamond',Georgia,Times New Roman,serif;
+  color: #909090;
+  line-height: 1.677em;
+  font-size: 1.235em;
+  margin: 0em 0em 3em;
   padding:var(--p-padding);
+}
+
+
+strong{
+  color: #000000;
+}
+
+
+
+
+/******************************/
+/* *** 4e stuk website **** */
+/******************************/
+
+/*  4e stuk van website  (wordt javaScript
+lukt niet!! witte stuk*/
+main img{
+  width: 100%;
+  height: 23em;
+}
+
+
+
+
+
+/******************************/
+/* **** 5e stuk website **** */
+/******************************/
+
+/* 5e stuk website (galary) Bron:https://www.youtube.com/watch?v=zgXHgKad7N0 */
+.container{
+  background-color: #000000;
+}
+
+
+.titel h2{
+  color:white; 
+  font-weight: lighter;
+  font-size: 2.2em;
+  padding: 1.5em;
+}
+
+
+@media (min-width: 600px) {
+  .titel h2{
+    margin: 7em 0em 0em;
+   
+  }
+  
+}
+
+
+.image_gallery{
+  padding: 1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 1em;
+  grid-column-gap: 1em;
+}
+
+
+
+div img{
+  height: 12em;
+}
+
+@media (min-width: 600px) {
+  div img{
+    height: 20em;
+  }
+  
+}
+
+
+
+section:nth-of-type(4) button{
+  background-color: white;
+  color: black;
+  font-size: 1em;
+  padding: .9em;
+  border-radius: 2em;
+  width: 8em;
+  position: relative;
+  top: -7em;
+  left: 7.5em;
+}
+
+
+@media (min-width: 600px) {
+  section:nth-of-type(4) button{
+    top: -9em;
+    left: 16em;
+  }
+  
+}
+
+
+
+/******************************/
+/* **** 6e stuk website **** */
+/******************************/
+
+/* 6e opmaak */
+footer{
+  background-color: black;
+  padding:var(--p-padding);
+}
+
+/* 6e "about" opmaak */
+/* footer :first-child ul a{
+  color: red;
+  margin: -1em 0em 1em;
+  font-family:'EB Garamond',Georgia,Times New Roman,serif;
+  font-size: 1.1em;
+  padding: 0em 0em 1em;
+} */
+
+/* 6e (follow us) link */
+footer h3{
+  color: white;
+  font-family:'EB Garamond',Georgia,Times New Roman,serif;
+  font-size: 1.1em;
+  margin: 3em 0rem;
+}
+
+/* social media links/icons */
+footer img{
+  width: 4em;
+}
+
+/* 6e hr opmaak  */
+footer hr{
+  border-color: gray;
+  border-bottom: 0em;
+  margin: 1.1em 0rem;
+  width: 20em;
+}
+
+footer ul li a{
+  color: #ffffff;
+  margin: 2.5em 0em 2em;
+  text-decoration: none;
+}
+
+footer ul {
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+
+footer ul li{
+  margin-top: .3em;
+}
+
+/* 6e img 2e   andere benaming */
+footer ul img{
+  width: 15em;
+  margin: 8em 1.5em 1em;
+}
+
+@media (min-width: 600px) {
+  footer hr:first-of-type{
+    width: 36em;
+  }
+  
+}
+
+@media (min-width: 600px) {
+  footer:nth-of-type(1) ul:nth-of-type(2) img{
+    width: 15em;
+    margin: 8em 10em 1em;
+  }
 }
 
 
@@ -234,5 +623,232 @@ section:nth-of-type(3) p{
 
 
 
+
+
+
+
+
+/* **************** 2e pagina van website ***************** */
+
+/* ********************* Mona Lisa ********************** */
+
+/* opmaak tekst */
+.monalisa section:first-of-type{
+  background-color: #1a1a1a;
+  display: grid;
+  grid-template-rows: 1fr;
+  height: 50em;
+  
+}
+
+
+/* h2 tekst */
+.monalisa section:nth-of-type(1) h2:first-of-type{
+  color: #ffffff;
+  font: 500 1.88em/1.27 LouvreSerif,Georgia,Times New Roman,serif;
+  text-align: center;
+  margin: 4.5em 1em;
+  margin-left: 1.5em;
+}
+
+
+/* p tekst */
+.monalisa section:nth-of-type(1) p:first-of-type{
+  color: #ffffff;
+  font-family: LouvreSerif,Georgia,Times New Roman,serif;
+  text-align: center;
+  margin-top: -7.5em;
+}
+
+
+.monalisa section:nth-of-type(1) img:first-of-type{
+  width: 100%;
+  height: 30em;
+  background-color: #1a1a1a;
+}
+
+
+.monalisa section:nth-of-type(2) p:nth-of-type(1){
+ margin-top: 7.5em;
+ font-size: 1em;
+padding: .10em 2em; 
+}
+
+
+.monalisa section:nth-of-type(3) p:nth-of-type(1){
+  color: #000000;
+  font-weight:bold ;
+  text-align: center;
+}
+
+
+
+/******************************/
+/* **** "a did you know" blue **** */
+/******************************/
+
+/* hr styling */
+.monalisa main hr{
+  border-color: grey;
+  border-top: 0em;
+}
+
+
+/* "did you know" styling */
+.monalisa section:nth-of-type(4){
+  background-color: #f6f6f6 ;
+}
+
+
+/* "did you know" styling tekst*/
+.monalisa section:nth-of-type(4) h4:first-of-type{
+  padding: var(--p-padding);
+  color: #0000e0;
+  position: relative;
+  top: 2em;
+}
+
+
+/* "did you know" styling line*/
+.monalisa section:nth-of-type(4) hr:first-of-type{
+  background-color: #f6f6f6;
+  opacity: 20%;
+  position: relative;
+  top: -.6em;
+  left: 9em;
+  width: 13em;
+}
+
+
+/* "mona lisa" styling tekst*/
+.monalisa section:nth-of-type(4) h3:first-of-type{
+  font-size: 1.5em;
+  font-weight: lighter;
+  padding: 1.2em;
+  margin: .5em 0em;
+}
+
+
+/* "p" styling tekst*/
+.monalisa section:nth-of-type(4) p:first-of-type{
+  padding: 1.2em;
+  font-size: 1.5em;
+  font-weight: lighter;
+  margin-top: -2.2em;
+}
+
+
+/* "img" styling image*/
+.monalisa section:nth-of-type(4) img:first-of-type{
+  padding: 1em ;
+  height: 18em ;
+  margin: 1.5em 0em 6em;
+  /* transform: scale(1.5);
+  overflow: hidden;
+  max-width: 100%; */
+}
+
+
+/******************************/
+/* **** "a new blue" **** */
+/******************************/
+
+/* h2 + p teksten */
+.monalisa section:nth-of-type(5) h2:nth-of-type(1){
+  font: 500 1.88em/1.27 LouvreSerif,Georgia,Times New Roman,serif;
+  margin: 3em 6em 0em;
+  margin-left: 1em;
+}
+
+.monalisa section:nth-of-type(5) p{
+  padding: var(--p-padding); 
+  margin-top: -1em;
+}
+
+
+.monalisa section:nth-of-type(5) h2:nth-of-type(2){
+  font: 500 1.88em/1.27 LouvreSerif,Georgia,Times New Roman,serif;
+  margin: .9em 2em 0em;
+  margin-left: 1em;
+}
+
+
+.monalisa section:nth-of-type(5) h2:nth-of-type(3){
+  font: 500 1.88em/1.27 LouvreSerif,Georgia,Times New Roman,serif;
+  margin: .9em 2em 0em;
+  margin-left: 1em;
+}
+
+/* "img" styling image*/
+.monalisa section:nth-of-type(5) img:first-of-type{
+  height: 35em ;
+  margin-top: 3em ;
+}
+
+
+
+/******************************/
+/* **** "did you know" red **** */
+/******************************/
+
+
+/* hr styling */
+.monalisa main hr{
+  border-color: grey;
+  border-top: 0em;
+}
+
+
+/* "did you know" styling */
+.monalisa section:nth-of-type(6){
+  background-color: #f6f6f6 ;
+}
+
+
+/* "did you know" styling tekst*/
+.monalisa section:nth-of-type(6) h4:first-of-type{
+  padding: var(--p-padding);
+  color: red;
+  position: relative;
+  top: 2em;
+}
+
+
+/* "did you know" styling line*/
+.monalisa section:nth-of-type(6) hr:first-of-type{
+  background-color: #f6f6f6;
+  opacity: 20%;
+  position: relative;
+  top: -.6em;
+  left: 9em;
+  width: 13em;
+}
+
+
+/* "mona lisa" styling tekst*/
+.monalisa section:nth-of-type(6) h3:first-of-type{
+  font-size: 1.4em;
+  font-weight: lighter;
+  padding: 1em;
+  margin: .5em 0em;
+}
+
+
+/* "p" styling tekst*/
+.monalisa section:nth-of-type(6) p:first-of-type{
+  padding: 1.2em;
+  font-size: 1.5em;
+  font-weight: lighter;
+  margin-top: -2.2em;
+}
+
+
+/* "img" styling image*/
+.monalisa section:nth-of-type(6) img:first-of-type{
+  padding: 1em ;
+  height: 20em ;
+  margin: 1.5em 0em 6em;
+
+}
 
 

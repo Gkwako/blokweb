@@ -22,7 +22,7 @@ Gloria Kwako
 Blauwe piste 🗻
 
 #### Je focus:
-Responsive & Surface laag 🕹 🧩
+surface 🕹 🧩
  
 </details>
 
@@ -150,7 +150,10 @@ Vandaag heb ik mijn voortgang gesprek gehad, hier werd de onderstaande punten be
 <summary>uitwerken voor 2e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Inmiddels is het gelukt om minder classes te gebruiken, daarvoor heb ik nth-of-type gebruikt:
+
+<img src="RMimages/nth-of.png" width="375px" alt="navv2">
+
 
 
 ### Agenda voor meeting
@@ -164,12 +167,12 @@ samen met je groepje opstellen
 
 
 ### Verslag van meeting
-hier na afloop snel de uitkomsten van de meeting vastleggen
+Vandaag heb ik mijn voortgang gesprek gehad, hier werd de onderstaande punten besproken waar ik aanpassingen in moet gaan doen. 
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- html en css code opschonen 
+- vaart maken met code schrijven
+- Beginnen aan 2e pagina
+
 
 </details>
 
