@@ -1,20 +1,19 @@
 // JavaScript Document
 console.log("Louvre");
 
-var hamburgerMenu = document.querySelector(".menu");
-
 var menuButton = document.querySelector(".icon");
-
+var hamburgerMenu = document.querySelector(".menu");
 
 
 
 // Click menuButton aan (Bron: Alex)
 
-menuButton.addEventListener("click", toggleHamburgerMenu);
+menuButton.addEventListener("click", hamburgerMenuopen);
 
 
-function toggleHamburgerMenu(){
+function hamburgerMenuopen(){
 
-    hamburgerMenu.classList.toggle("visible");
-
+    hamburgerMenu.classList.add("visible");
+    console.log("menu open");
 }
+
