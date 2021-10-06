@@ -1,9 +1,7 @@
 
-/******************************/
-/* ALGEMENE CUSTOM OPMAAK */
-/******************************/
+/* ---------------- ALGEMENE CUSTOM OPMAAK ---------------- */
 
-/* ---------------- CSS Document ---------------- */
+/* CSS Document  */
 *, *::after, *::before {
   box-sizing:border-box;  
   margin: 0%;
@@ -11,72 +9,49 @@
 }
 
 
-/* ---------------- shortcuts ------------------- */
+/* shortcuts  */
 :root{
   --p-padding: 2em;
+  --border: none;
+  --decoration: none;
+  --list: none;
 }
 
 
-/* ---------------- button opmaak ---------------- */
+/* alle opmaak */
 button {
-  border: none;
+  border:var(--border);
 } 
 
-
-/* ---------------- ul opmaak ---------------- */
 ul{
-	text-decoration: none;
-	list-style: none;
+  text-decoration:var(--decoration);
+  list-style:var(--list) ;
 }
 
 
 
-/******************************/
-/* ******** HEADER ******** */
-/******************************/
 
-/* ---------------- header opmaak ---------------- */
-header{
-  background-color: #000000;
-  height: 8em;
+/* ---------------- HEADER ---------------- */
+/* -------------(bovenste stuk)--------------- */
+
+
+
+/* ---------------- HAMBURGER MENU ---------------- */
+/* hamburger menu icon opmaak */
+header ul:nth-of-type(2) img:first-of-type{
+  width: 3.2em;
+  height: 3.1em;
+  margin-bottom: -3em;
 }
 
 
-/* ---------------- nav opmaak ---------------- */
-header nav{
-  display:flex;
-  flex-direction:column;
-  align-items: center;
-  width: 100%;
+/* hamburger button invisible */
+ul:nth-of-type(2) button:first-of-type{
+  width: 0em;
 }
 
 
-/* ---------------- ul opmaak ---------------- */
-header:first-of-type ul:nth-of-type(2){
-  display: flex;
-  justify-content: space-between;
-  width: 93%;
-}
-
-
-
-/******************************/
-/* ***** HAMBURGER MENU ***** */
-/******************************/
-
-/* ---------------- hamburger menu icon opmaak ---------------- */
-.icon{
-  width: 3.1em;
-  height: 2.7em;
-  margin: .8em -.3em;
-}
-
-header nav ul li button{
-  margin: 0;
-  padding: 0;
-}
-
-
+/* ---------------- responsief (iphone 6/7/8) ---------------- */
 /* 
 @media (min-width: 600px) {
   .icon{
@@ -91,118 +66,188 @@ header nav ul li button{
 } */
 
 
-/* ---------------- in de hamburger menu opmaak ---------------- */
+
+/*  in de hamburger menu opmaak  */
  .menu {
   position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
   z-index: -1;
-  background-color:green;
+  background-color:#1A1A1Aff;
   padding-top: 1em;
   opacity: 0;
   transform: translateX(-100%); 
 } 
 
-/* .menu .toggler{
-  position: absolute;
-  top: 1em;
-  left: 1em;
-  bottom: 0;
-  z-index: 2;
-  cursor: pointer;
-  width: 5em;
-  height: 4em;
-} */
+
+/* hamburger button kruisje opmaak */
+.menu button img:first-of-type{
+  width: 4em;
+  height: 4.5em;
+  margin-bottom: -1em;
+  margin-left: .5em;
+}
+
+
+/* hamburger button invisible */
+.menu button{
+  width: 0em;
+}
+
+
+/* search bar opmaak*/
+.menu input{
+  width: 26em;
+  height: 4.5em;
+  margin: 1.1em;
+  border-radius: .3em;
+  padding: 1.5em ;
+  border:var(--border);
+}
+
+
+/* hr opmaak (bij search bar) 1e stuk*/
+header:first-of-type hr:nth-of-type(1){
+  border-color: gray;
+  margin-left: 1em;
+  width: 21.3em;
+  border-bottom: 0em;
+}
 
 
 
+/* tekst opmaak (visit, explore etc..) */
+.menu li a:nth-of-type(1) {
+  margin: 2em ;
+  color: white;
+  text-decoration:var(--decoration);
+  list-style:var(--list);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5em;
+}
+ 
+
+/* opmaak pijlen & plaatsing van tekst */
+.menu li:nth-of-type(2){
+  margin: 3em 0em 2em;
+}
+
+.menu li:nth-of-type(2) img{
+  margin: -2em;
+  margin-left: 10em;
+}
+
+
+.menu li:nth-of-type(3){
+  margin: 3em 0em;
+}
+
+.menu li:nth-of-type(3) img{
+  margin: -2em;
+  margin-left: 8em;
+}
+
+
+.menu li:nth-of-type(4){
+  margin: 3em 0em;
+}
+
+.menu li:nth-of-type(4) img{
+  margin: -2em;
+  margin-left: 6em;
+}
+
+
+
+/* hr opmaak 2e stuk  */
+header:first-of-type hr:nth-of-type(2){
+  border-color: gray;
+  margin-left: 1em;
+  width: 21.3em;
+  border-bottom: 0em;
+}
+
+/* afbeelding in hamburger menu  */
+.online{
+  margin: 2em;
+  width: 20em;
+}
+
+
+
+
+/* ---------------- VOOR IN JAVAsCRIPT ---------------- */
 .visible {
   opacity: 2;
   z-index: 1;
+  transform: translateX(0%);
+  position: fixed;
+  transition: opacity 0.4s ease;
+} 
+
+
+.invisible {
+  opacity: 0;
+  z-index: 0;
   transform: translateX(0%);
 } 
 
 
 
 
-/* hoofdtekst opmaak  */
+
+/* ---------------- HOOFDTEKST (louvre) ---------------- */
+/*  header opmaak kleur + lengte  */
+header{
+  background-color:#000000;
+  height: 7.5em;
+}
+
 header ul:nth-of-type(2) li:nth-of-type(2) a{
   text-decoration: none;
   color: #ffffff;
   letter-spacing: .1em;
   font-size: 2em;
   position: relative;
-  right: .9em;
+  right: .8em;
   bottom: -.55em;
 }
 
 
-
-@media (min-width: 450px) {
-  header ul:nth-of-type(2) li:nth-of-type(2) a{
-    right: 2.6em;
-    bottom: -.6em;
-  }
-  
+/*  nav opmaak, plaatsing van nav balk */
+header nav:first-of-type{
+  display:flex;
+  flex-direction:column;
+  align-items: center;
 }
 
 
-@media (min-width: 600px) {
-  header ul:nth-of-type(2) li:nth-of-type(2) a{
-    right: 4.5em;
-  }
-  
-}
-
-
-@media (min-width: 1400px) {
-  header ul:nth-of-type(2) li:nth-of-type(2) a{
-    font-size: 3em;
-    right: -.7em;
-    bottom: -.2em;
-  }
-  
+/* ul opmaak */
+header ul:nth-of-type(2){
+  display: flex;
+  justify-content: space-between;
+  width: 96%;
 }
 
 
 
-/* 1e button opmaak  */
+/* ---------------- Button opmaak (tickets)---------------- */
 header ul:nth-of-type(2) li:nth-of-type(3) button{
-  text-decoration: none;
   background-color: #008573;
   color: #ffffff;
-  font-size: 1em;
-  padding: .7em;
+  font-size: .9em;
+  padding: .6em;
   border-radius: 2em;
   width: 6.5em;
-  margin: 1em 0em 1em;
-}
-
-
-@media (min-width: 600px) {
-  header ul:nth-of-type(2) li:nth-of-type(3) button{
-    font-size: 1em;
-    padding: .6em;
-  }
-}
-
-
-@media (min-width: 1400px) {
-  header ul:nth-of-type(2) li:nth-of-type(3) button{
-    margin-top: 1.2em;
-  }
-  
+  margin: 1.3em 0em 1em;
 }
 
 
 
-/******************************/
-/* ***** HEADER 2e stuk ***** */
-/******************************/
 
-/* line opmaak */
-header:first-of-type hr:first-of-type{
+/* ---------------- line opmaak (hr)---------------- */
+header:first-of-type hr:nth-of-type(2){
   border-color: gray;
   width: 21em;
   border-bottom: 0em;
@@ -210,99 +255,60 @@ header:first-of-type hr:first-of-type{
 
 
 
-@media (min-width: 450px) {
-  header:first-of-type hr:first-of-type{
-    width: 27em;
-  }
-}
 
-@media (min-width: 600px) {
-  header:first-of-type hr:first-of-type{
-    width: 36em;
-  }
-}
-
-
-@media (min-width: 1400px) {
-  header:first-of-type hr:first-of-type{
-    width: 86em;
-  }
-}
-
-
-
-
-/* 2e nav stuk (ul opmaak) */
+/* ---------------- 2e nav stuk (vist etc opmaak)---------------- */
 header ul:nth-of-type(3){
   display: flex;
   justify-content: space-between;
   width: 65%;
-  margin: .7em 0em 0em;
+  margin: .5em 0em 0em;
   font-size: 1.3em;
 }
 
 
+/* ---------------- tekst (vist etc opmaak)---------------- */
 header ul:nth-of-type(3) a{
   color:#ffffff;
-  text-decoration: none;
-  font-family: 'Montserrat', Verdana, sans-serif;
+  text-decoration:var(--decoration);
+  list-style:var(--list);
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 0.77em;
 }
 
-
-
-@media (min-width: 450px) {
-  header ul:nth-of-type(3){
-    width: 45%;
-  }
-}
-
-@media (min-width: 1400px) {
-  header ul:nth-of-type(3){
-    width: 20%;
-  }
-
-header ul:nth-of-type(3) a{
-  font-size: 1em;
-}
-}
-
-
-
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
 
 /******************************/
-/* **** 1e stuk website ***** */
+/* **** Main - section 1 ***** */
 /******************************/
 
-/* 1e web-display */
-section:first-of-type {
+/* ----------------1e web-display color---------------- */
+.homepage section:first-of-type {
   background-color:#f6f6f6 ;
 }
 
 
-/* 1e image */
-section:nth-of-type(1) img{
+/* ---------------- background video  ---------------- */
+.homepage section:nth-of-type(1) video{
   width: 100%;
   height: 34em;
+  object-fit: cover;
 }
 
 
-@media (min-width: 600px) {
-  section:nth-of-type(1) img{
-    height: 45em;
-  }
-}
-
-
-@media (min-width: 1400px) {
-  section:nth-of-type(1) img{
-    height: 100em;
-  }
-}
-
-
-
-/* 1e h2 */
+/* ---------------- titel h2 (escape with...)----------------*/
 .homepage section:nth-of-type(1) h2{
   position: absolute;
   bottom: 11.5em;
@@ -313,18 +319,9 @@ section:nth-of-type(1) img{
 }
 
 
-@media (min-width: 600px) {
-  section:nth-of-type(1) h2{
-    bottom: 9em;
-    margin-left: 3.8em;
-  }
-}
 
-
-
-
-/* 1e button */
-section:nth-of-type(1) button {
+/* ---------------- 1e in main button (book tickets) ----------------*/
+.homepage section:nth-of-type(1) button {
   background-color: #008573;
   color: white;
   font-size: 1em;
@@ -332,32 +329,36 @@ section:nth-of-type(1) button {
   border-radius: 2em;
   width: 8em;
   position: relative;
-  left: 7em;
+  left: 8em;
   top: -15.5em;
 }
 
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
 
+/******************************/
+/* **** Main - section 2 ***** */
+/******************************/
 
-@media (min-width: 600px) {
-  section:nth-of-type(1) button {
-    left: 16.5em;
-    top: -21em;
-  }
-  
+/*  2e web-display background-color (info covid-19 */
+.homepage section:nth-of-type(2){
+  background-color:#f6f6f6;
 }
 
 
-/******************************/
-/* **** 2e stuk website **** */
-/******************************/
-
-/* 2e web-display */
-.homepage section:nth-of-type(2) {
-  background-color:#f6f6f6 ;
-}
-
-
-/* 2e info-image */
+/* 2e info-image (covid-19) */
 .homepage section:nth-of-type(2) img{
   width: 3em;
   height: 2.5em;
@@ -367,15 +368,15 @@ section:nth-of-type(1) button {
 
 
 
-/* 2e (1e h3)*/
+/* 2e (tekst covid h3 )*/
 .homepage section:nth-of-type(2) h3{
    font: 1em/1.5 'Montserrat',Verdana,sans-serif;
    margin: -3.2rem 5rem;
    margin-left: 6.7em;
- }
+}
 
 
-/* 2e p tekst*/
+/* 2e (tekst time-slot.... p element */
 .homepage section:nth-of-type(2) p{
   font: 400 1em/1.56 Roboto,Open Sans,Arial,Helvetica,sans-serif;
   font-weight: bolder;
@@ -392,44 +393,67 @@ section:nth-of-type(1) button {
 }
 
 
-/* 2e hr stuk */
+/* 2e (hr stuk in section 2) */
 .homepage section:nth-of-type(2) hr:nth-of-type(1){
   border-color: rgba(128, 128, 128, 0.349);
   margin-top: 4em;
   border-bottom: 0em;
-
 }
 
-
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
 
 /******************************/
-/* **** 3e stuk website **** */
+/* **** Main - section 3e **** */
 /******************************/
 
-/*  3e (2e h2)  */
+/* 3e (tekst h2 highlights....) */
 section:nth-of-type(3) h2 {
-  margin: 4rem 1.5rem;
+  margin: 3em 1em;
   font: 400 1.5em/1.27 'LouvreSerif',Georgia,Times New Roman,serif;
   font-size: 2em;
 }
 
 
-/* 3e foto gallery  bron: flexbox oefening*/
+/* 3e (scroll gallery) bron: flexbox oefening*/
 section:nth-of-type(3) ul{
   display: flex;
   overflow: auto;
 }
 
 
+/* 3e (img wordt kleiner met dezelfde formaat) bron: flexbox oefening*/
 section:nth-of-type(3) li{
   flex-shrink: 0;
 }
 
 
+/* tekst op img (highlights....)*/
+section:nth-of-type(3) a:first-of-type{
+  color: white;
+  position: absolute;
+  margin: 20em 6em;
+  margin-left: 2em;
+}
+
+
+/* img opmaak (highlights....) */
 section:nth-of-type(3) li img{
   margin: -.4em;
-  width: 20em; 
-  height: 25em;
+  width: 21em; 
+  height: 26em;
   border-radius: 2em;
   padding:1em;
 }
@@ -440,11 +464,10 @@ section:nth-of-type(3) li img{
     width: 38em;
     height: 50em;
   }
-  
 }
 
 
-/* 3e h3 */
+/* 3e (hoofd tekst h3) */
 section:nth-of-type(3) h3{
   font: 0.875em	 'Montserrat',Verdana,sans-serif;
   letter-spacing: .13em;
@@ -453,7 +476,7 @@ section:nth-of-type(3) h3{
 }
 
 
-/* 3e (2e p ) */
+/* 3e (tekst p element) */
 section:nth-of-type(3) p{
   font-family:'EB Garamond',Georgia,Times New Roman,serif;
   color: #909090;
@@ -464,52 +487,61 @@ section:nth-of-type(3) p{
 }
 
 
+/* 3e (tekst dikte) */
 strong{
   color: #000000;
 }
 
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
 
+/***************************************/
+/* *** 4e (scroll background img) **** */
+/***************************************/
 
-
-/******************************/
-/* *** 4e stuk website **** */
-/******************************/
-
-/*  4e stuk van website  (wordt javaScript
-lukt niet!! witte stuk*/
-
-/* section:nth-child(4){
-  background-image: url("images/mainimg.jpg");
+/* background img (Bron: Daan studentassistent)*/
+.scroll{
+  background-image: url("/images/mainimg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  height: 500px;
-} */
-
-
-
-.scroll img{
   width: 100%;
-  height: 23em;
+  height: 28em;
+  /* margin-bottom: 5em; */
 }
 
-
-
-/* section voor de achtergrond scroll{
-  background-image: url("images");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  height: 500px;
-  } */
-
-
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
 
 /******************************/
-/* **** 5e stuk website **** */
+/* ******* 5e GALERY ******* */
 /******************************/
 
-/* 5e stuk website (galary) Bron:https://www.youtube.com/watch?v=zgXHgKad7N0 */
+/* 5e (galary) Bron:https://www.youtube.com/watch?v=zgXHgKad7N0 */
 .container{
   background-color: #000000;
 }
@@ -523,13 +555,11 @@ lukt niet!! witte stuk*/
 }
 
 
-@media (min-width: 600px) {
+/* @media (min-width: 600px) {
   .titel h2{
     margin: 7em 0em 0em;
-   
   }
-  
-}
+} */
 
 
 .image_gallery{
@@ -541,22 +571,19 @@ lukt niet!! witte stuk*/
 }
 
 
-
 div img{
   height: 12em;
   width: 100%;
-  
 }
 
-@media (min-width: 600px) {
+/* @media (min-width: 600px) {
   div img{
     height: 20em;
   }
-  
-}
+} */
 
 
-
+/* button explore.. */
 section:nth-of-type(5) button{
   background-color: white;
   color: black;
@@ -570,21 +597,33 @@ section:nth-of-type(5) button{
 }
 
 
-@media (min-width: 600px) {
+/* @media (min-width: 600px) {
   section:nth-of-type(5) button{
     top: -9em;
     left: 16em;
   }
-  
-}
+} */
 
-
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
 
 /******************************/
-/* **** 6e stuk website **** */
+/* ******** FOOTER ********* */
 /******************************/
 
-/* 6e opmaak */
+/* footer opmaak */
 footer{
   background-color: black;
   padding:var(--p-padding);
@@ -599,7 +638,7 @@ footer{
   padding: 0em 0em 1em;
 } */
 
-/* 6e (follow us) link */
+/* (follow us) link */
 footer h3{
   color: white;
   font-family:'EB Garamond',Georgia,Times New Roman,serif;
@@ -612,7 +651,7 @@ footer img{
   width: 4em;
 }
 
-/* 6e hr opmaak  */
+/* hr opmaak in footer */
 footer hr{
   border-color: gray;
   border-bottom: 0em;
@@ -620,33 +659,40 @@ footer hr{
   width: 20em;
 }
 
-footer ul li a{
+/* about.. opmaak in footer */
+footer ul:first-of-type li {
+  margin: 2.5em 0em 2em;
+}
+
+footer a{
   color: #ffffff;
   margin: 2.5em 0em 2em;
   text-decoration: none;
 }
 
+/* legal.. opmaak in footer */
 footer ul {
   margin-top: 3em;
   margin-bottom: 3em;
 }
 
 
-footer ul li{
-  margin-top: .3em;
-}
+/* footer ul li{
+  margin-top: .3em; 
+} */
 
-/* 6e img 2e   andere benaming */
+
+
+/* Footer img (uiteinde) */
 footer ul img{
   width: 15em;
   margin: 8em 1.5em 1em;
 }
 
-@media (min-width: 600px) {
+/* @media (min-width: 600px) {
   footer hr:first-of-type{
     width: 36em;
   }
-  
 }
 
 @media (min-width: 600px) {
@@ -654,33 +700,38 @@ footer ul img{
     width: 15em;
     margin: 8em 10em 1em;
   }
-}
+} */
 
 
-
-
-
-
-
-
-
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
 
 
 /* **************** 2e pagina van website ***************** */
 
 /* ********************* Mona Lisa ********************** */
 
-/* opmaak tekst */
+/* opmaak 1e section*/
 .monalisa section:first-of-type{
   background-color: #1a1a1a;
   display: grid;
-  grid-template-rows: 1fr;
   height: 50em;
-  
 }
 
 
-/* h2 tekst */
+/* hoofd tekst opmaak h2 (from the mona..) */
 .monalisa section:nth-of-type(1) h2:first-of-type{
   color: #ffffff;
   font: 500 1.88em/1.27 LouvreSerif,Georgia,Times New Roman,serif;
@@ -690,7 +741,7 @@ footer ul img{
 }
 
 
-/* p tekst */
+/* p tekst (the salle....)*/
 .monalisa section:nth-of-type(1) p:first-of-type{
   color: #ffffff;
   font-family: LouvreSerif,Georgia,Times New Roman,serif;
@@ -699,37 +750,57 @@ footer ul img{
 }
 
 
+/* img (mona lisa portret...)*/
 .monalisa section:nth-of-type(1) img:first-of-type{
   width: 100%;
-  height: 30em;
+  height: 29em;
+  padding: 2em;
   background-color: #1a1a1a;
 }
 
 
+
+/* p element (room 711...)*/
 .monalisa section:nth-of-type(2) p:nth-of-type(1){
  margin-top: 7.5em;
  font-size: 1em;
-padding: .10em 2em; 
+ padding: .10em 2em; 
 }
 
 
 .monalisa section:nth-of-type(3) p:nth-of-type(1){
   color: #000000;
-  font-weight:bold ;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  font-size: 1em;
+  padding: 2.5em;
   text-align: center;
 }
 
-
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
 
 /******************************/
 /* **** "a did you know" blue **** */
 /******************************/
 
 /* hr styling */
-.monalisa main hr{
+/* .monalisa main hr{
   border-color: grey;
   border-top: 0em;
-}
+} */
 
 
 /* "did you know" styling */
@@ -767,10 +838,12 @@ padding: .10em 2em;
 }
 
 
-/* "p" styling tekst*/
+/* "tekst p " styling */
 .monalisa section:nth-of-type(4) p:first-of-type{
   padding: 1.2em;
   font-size: 1.5em;
+  font-family: 'Times New Roman', Times, serif;
+  color: #000000d0;
   font-weight: lighter;
   margin-top: -2.2em;
 }
@@ -780,21 +853,33 @@ padding: .10em 2em;
 .monalisa section:nth-of-type(4) img:first-of-type{
   padding: 1em ;
   height: 18em ;
-  margin: 1.5em 0em 6em;
-  /* transform: scale(1.5);
-  overflow: hidden;
-  max-width: 100%; */
+  margin: 1.5em 0em 3em;
+  width: 100%; 
 }
 
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
 
 /******************************/
 /* **** "a new blue" **** */
 /******************************/
 
-/* h2 + p teksten */
+/* artikelen h2 + p teksten */
 .monalisa section:nth-of-type(5) h2:nth-of-type(1){
   font: 500 1.88em/1.27 LouvreSerif,Georgia,Times New Roman,serif;
-  margin: 3em 6em 0em;
+  margin: 2em 6em 0em;
   margin-left: 1em;
 }
 
@@ -804,6 +889,7 @@ padding: .10em 2em;
 }
 
 
+/* artikelen h2 + p teksten */
 .monalisa section:nth-of-type(5) h2:nth-of-type(2){
   font: 500 1.88em/1.27 LouvreSerif,Georgia,Times New Roman,serif;
   margin: .9em 2em 0em;
@@ -811,6 +897,7 @@ padding: .10em 2em;
 }
 
 
+/* artikelen h2 + p teksten */
 .monalisa section:nth-of-type(5) h2:nth-of-type(3){
   font: 500 1.88em/1.27 LouvreSerif,Georgia,Times New Roman,serif;
   margin: .9em 2em 0em;
@@ -821,20 +908,34 @@ padding: .10em 2em;
 .monalisa section:nth-of-type(5) img:first-of-type{
   height: 35em ;
   margin-top: 3em ;
+  width: 100%;
 }
 
-
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
 
 /******************************/
 /* **** "did you know" red **** */
 /******************************/
 
 
-/* hr styling */
+/* hr styling
 .monalisa main hr{
   border-color: grey;
   border-top: 0em;
-}
+} */
 
 
 /* "did you know" styling */
@@ -865,19 +966,21 @@ padding: .10em 2em;
 
 /* "mona lisa" styling tekst*/
 .monalisa section:nth-of-type(6) h3:first-of-type{
-  font-size: 1.4em;
+  font-size: 1.5em;
   font-weight: lighter;
-  padding: 1em;
-  margin: .5em 0em;
+  padding: 1.3em;
+  margin: .7em 0em;
 }
 
 
 /* "p" styling tekst*/
 .monalisa section:nth-of-type(6) p:first-of-type{
-  padding: 1.2em;
-  font-size: 1.5em;
+  padding: 1.3em;
+  font-size: 1.2em;
+  font-family: 'Times New Roman', Times, serif;
+  color: #000000d0;
   font-weight: lighter;
-  margin-top: -2.2em;
+  margin-top: -2.8em;
 }
 
 
@@ -886,7 +989,15 @@ padding: .10em 2em;
   padding: 1em ;
   height: 20em ;
   margin: 1.5em 0em 6em;
-
+  width: 100%;
 }
+
+
+.monalisa section:nth-of-type(6) p:nth-of-type(2){
+  margin-top: -11em;
+  font-size: 1em;
+  padding: 5em 2em; 
+ }
+
 
 

@@ -111,7 +111,7 @@ Ik ben deze week begonnen aan de navigatiebalk (de header), hieronder zie je de 
 <img src="RMimages/navv1.png" width="375px" alt="navv1">
 
 
-Ik liep op een geven moment wel vast, waardoor ik hulp kreeg van een student assistent en ik heb verder gebruik gemaakt van Youtube. 
+Ik liep op een geven moment wel vast, waardoor ik hulp kreeg van een student assistent en ook heb ik verder gebruik gemaakt van Youtube. 
 
 Hieronder zie je de 2e versie:
 <img src="RMimages/navv2b.png" width="375px" alt="navv2b">
@@ -119,20 +119,8 @@ Hieronder zie je de 2e versie:
 
 
 
-
-
-### Agenda voor meeting
-samen met je groepje opstellen
-
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
-
-
 ### Verslag van meeting
-Vandaag heb ik mijn voortgang gesprek gehad, hier werd de onderstaande punten besproken waar ik aanpassingen in moet gaan doen. 
+Vandaag heb ik mijn voortgang gesprek gehad, hier werd de onderstaande punten besproken waar ik aanpassingen op moet gaan doen. 
 
 - Minder classes gebruiken, ipv daarvan nth-of-type () gebruiken
 - Hoe de div's worden gebruikt klopt niet, beter ul's gebruiken
@@ -155,15 +143,6 @@ Inmiddels is het gelukt om minder classes te gebruiken, daarvoor heb ik nth-of-t
 <img src="RMimages/nth-of.png" width="375px" alt="navv2">
 
 
-
-### Agenda voor meeting
-samen met je groepje opstellen
-
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
 
 
 ### Verslag van meeting
@@ -188,32 +167,38 @@ Vandaag heb ik mijn voortgang gesprek gehad, hier werd de onderstaande punten be
 ### Bevindingen
 Lijst met je bevindingen die in de test naar voren kwamen:
 
-#### Titel eerste bevinding
-Hier korte omschrijving (met indien nodig een afbeelding)
+#### Kleurenblindheid
+Vanadaag heb ik een aantal brillen uitgeprobeerd dat hetzelfde effect geeft van iemand die kleuren blind is.
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+Met deze brillen heb ik op mijn eigen website proberen te surfen, dit ging grotendeels wel goed, de website is toegankelijk voor kleuren blinden.
 
-
-#### Titel tweede bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+De Louvre gebruikt geen gekke kleuren waardoor het voor de meeste kleurenblinden een fijne website is om te surfen.
 
 
-#### Titel volgende bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
+#### Elastiek 
+Met de elastieken moest je ze om je vingers wikkelen en vervolgens proberen te surfen in je eigem website. 
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+Dit was wel moeilijk te doen met de trackpad waardoor het fijner is om met de toetsenboard of screen-reader mee te werken. 
 
 
-#### Titel nog een bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
+#### Screen-reader. 
+De screen-reader is een fijne en gemakelijke manier om te surfen op de website, alleen moet je wel goed de screen-reader aanpassen zodat het niet lettelijk alles gaat benoemen die niet van belang is.
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+
+
+#### Schok. 
+Dit was wel een van de moeilijkste probleem voor mensen die een soort tik hebben en niet stil kunnen zitten, dit maakt het surfen op internet erg moeilijk. 
+
+De geadviseerde manier om te surfen op internet voor hun is om sirri te gekrijgen, dit zorgt ervoor dat ze niet hoeven te typen.
 
 </details>
 
 
+### Test personen 
+samen met je groepje opstellen
+
+Test persoon 1:
+De hamburger menu kan niet getapt worden met de toetsenboard.
 
 
 
@@ -223,24 +208,13 @@ Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbe
 <summary>uitwerken voor 3e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
-
-### Agenda voor meeting
-samen met je groepje opstellen
-
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+Ik ben inmiddels begonnen aan mijn 2e pagina wat ook af is, wel loop ik vast met bapaalde schoonheids foutjes wat mij niet lukt om op te lossen.  
 
 
 ### Verslag van meeting
-hier na afloop snel de uitkomsten van de meeting vastleggen
+Vandaag heb ik mijn laatset voortgang gesprek voor het eindbeoordeling, hier werd de onderstaande punten besproken waar ik aanpassingen in moet gaan doen. 
 
-- Header moet in de body
-- Verder werken
+- Vaart maken met code schrijven
 
 </details>
 
