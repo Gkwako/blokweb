@@ -228,11 +228,20 @@ Vandaag heb ik mijn laatset voortgang gesprek voor het eindbeoordeling, hier wer
 <summary>uitwerken voor eindgesprek</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Doordat ik deze week ziek was heb ik in een korte tijd heel veel moeten coderen, wat grotendeels gelukt is maar helaas heb ik het niet helemaal af kunnen krijgen.
 
-### Screenshot(s)
+Hieronder zie je het eindresultaat van de website:
 
-hier screenshot(s) van je eindresultaat
+### Screenshot(s) 1e pagina
+
+<img src="RMimages/home.png" width="375px" alt="home">
+<img src="RMimages/home2.png" width="375px" alt="home">
+<img src="RMimages/home3.png" width="375px" alt="home">
+<img src="RMimages/home4.png" width="375px" alt="menu">
+
+
+### Screenshot(s) 2e pagina
+<img src="RMimages/formulier.png" width="375px" alt="home">
 
 </details>
 
@@ -247,8 +256,10 @@ hier screenshot(s) van je eindresultaat
 
 Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-1. bron 1
-2. bron 2
-3. ...
+1. Hamburger menu: bron- 
+2. Scroll gallery (regel:554 in css) bron: flexbox oefening 
+3. Gallery (regel: 675 in css) bron: https://www.youtube.com/watch?v=zgXHgKad7N0 
+4. Formulier (regel: 2e html 171) bron: internetstandaarden
+5. Video (regel: 73) bron: https://www.youtube.com/watch?v=05ZHUuQVvJM 
 
 </details>

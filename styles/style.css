@@ -1,5 +1,4 @@
-
-/* ---------------- ALGEMENE CUSTOM OPMAAK ---------------- */
+/* ------------------- ALGEMENE CUSTOM OPMAAK ------------------- */
 
 /* CSS Document  */
 *, *::after, *::before {
@@ -8,8 +7,7 @@
   padding: 0%;
 }
 
-
-/* shortcuts  */
+/* shortcuts */
 :root{
   --p-padding: 2em;
   --border: none;
@@ -17,26 +15,23 @@
   --list: none;
 }
 
-
-/* alle opmaak */
+/* alle button opmaak */
 button {
   border:var(--border);
 } 
 
-ul{
-  text-decoration:var(--decoration);
-  list-style:var(--list) ;
+
+
+
+/* ------------------------- HEADER ------------------------- */
+/* ----------------------(bovenste stuk)--------------------- */
+
+/* header opmaak kleur + lengte  */
+header{
+  background-color:#000000;
+  height: 7.5em;
 }
 
-
-
-
-/* ---------------- HEADER ---------------- */
-/* -------------(bovenste stuk)--------------- */
-
-
-
-/* ---------------- HAMBURGER MENU ---------------- */
 /* hamburger menu icon opmaak */
 header ul:nth-of-type(2) img:first-of-type{
   width: 3.2em;
@@ -44,30 +39,75 @@ header ul:nth-of-type(2) img:first-of-type{
   margin-bottom: -3em;
 }
 
-
-/* hamburger button invisible */
-ul:nth-of-type(2) button:first-of-type{
+/* hamburger menu button icon (invisible gemaakt) */
+header ul:nth-of-type(2) button:first-of-type{
   width: 0em;
 }
 
+/* titel (louvre) */
+header ul:nth-of-type(2) li:nth-of-type(2) a{
+  text-decoration: none;
+  color: #ffffff;
+  letter-spacing: .1em;
+  font-size: 2em;
+  position: relative;
+  right: .3em;
+  bottom: -.55em;
+}
 
-/* ---------------- responsief (iphone 6/7/8) ---------------- */
-/* 
-@media (min-width: 600px) {
-  .icon{
-    margin: .8em -.9em;
+/* nav opmaak, plaatsing van nav balk */
+header nav:first-of-type{
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+}
+
+/* ul opmaak, ruimte tussen icon en button*/
+header ul:nth-of-type(2){
+  display: flex;
+  justify-content: space-between;
+  width: 96%;
+}
+
+/* Button opmaak (tickets */
+header ul:nth-of-type(2) li:nth-of-type(3) button{
+  background-color: #008573;
+  color: #ffffff;
+  font-size: .9em;
+  padding: .6em;
+  border-radius: 2em;
+  width: 6.5em;
+  margin: 1.3em 0em 1em;
+}
+
+/* line opmaak hr */
+header:first-of-type hr:nth-of-type(1){
+  border-color: gray;
+  width: 17em;
+  border-bottom: 0em;
+}
+
+
+
+
+/* responsief (galaxy note 3) */
+@media (min-width: 360px) {
+  /* titel (louvre) */
+  header ul:nth-of-type(2) li:nth-of-type(2) a{
+    right: .9em;
+  }
+  /* line opmaak hr */
+  header:first-of-type hr:nth-of-type(1){
+    width: 20em;
   }
 }
 
-@media (min-width: 1400px) {
-  .icon{
-    margin: .8em -1.5em;
-  }
-} */
 
 
 
-/*  in de hamburger menu opmaak  */
+/* ------------------------- HAMBURGER MENU ------------------------- */
+
+/* in het hamburger menu opmaak */
  .menu {
   position: fixed;
   top: 0;
@@ -80,8 +120,7 @@ ul:nth-of-type(2) button:first-of-type{
   transform: translateX(-100%); 
 } 
 
-
-/* hamburger button kruisje opmaak */
+/* hamburger button (kruisje) opmaak */
 .menu button img:first-of-type{
   width: 4em;
   height: 4.5em;
@@ -89,16 +128,14 @@ ul:nth-of-type(2) button:first-of-type{
   margin-left: .5em;
 }
 
-
-/* hamburger button invisible */
+/* in het hamburger menu button (invisible gemaakt)*/
 .menu button{
   width: 0em;
 }
 
-
 /* search bar opmaak*/
 .menu input{
-  width: 26em;
+  width: 22em;
   height: 4.5em;
   margin: 1.1em;
   border-radius: .3em;
@@ -106,78 +143,141 @@ ul:nth-of-type(2) button:first-of-type{
   border:var(--border);
 }
 
-
 /* hr opmaak (bij search bar) 1e stuk*/
-header:first-of-type hr:nth-of-type(1){
+.menu:first-of-type hr:nth-of-type(1){
   border-color: gray;
   margin-left: 1em;
-  width: 21.3em;
+    width: 18em;
   border-bottom: 0em;
 }
 
-
-
-/* tekst opmaak (visit, explore etc..) */
+/* plaatsing tekst visit, explore etc.. */
 .menu li a:nth-of-type(1) {
   margin: 2em ;
   color: white;
   text-decoration:var(--decoration);
   list-style:var(--list);
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.5em;
+  font-size: 1.1em;
 }
- 
 
 /* opmaak pijlen & plaatsing van tekst */
 .menu li:nth-of-type(2){
   margin: 3em 0em 2em;
 }
 
+
+/* pijl bij visit.. */
 .menu li:nth-of-type(2) img{
   margin: -2em;
-  margin-left: 10em;
+  margin-left: 9em;
 }
-
 
 .menu li:nth-of-type(3){
   margin: 3em 0em;
 }
 
+
+/* pijl bij explore.. */
 .menu li:nth-of-type(3) img{
   margin: -2em;
-  margin-left: 8em;
+  margin-left: 7.5em;
 }
-
 
 .menu li:nth-of-type(4){
   margin: 3em 0em;
 }
 
+
+/* pijl bij what's on.. */
 .menu li:nth-of-type(4) img{
   margin: -2em;
   margin-left: 6em;
 }
 
 
-
 /* hr opmaak 2e stuk  */
-header:first-of-type hr:nth-of-type(2){
+.menu:first-of-type hr:nth-of-type(2){
   border-color: gray;
   margin-left: 1em;
-  width: 21.3em;
+  width: 18em;
   border-bottom: 0em;
 }
 
 /* afbeelding in hamburger menu  */
-.online{
+.menu .online{
   margin: 2em;
-  width: 20em;
+  width: 16.5em;
+}
+
+
+
+/* responsief (galaxy note 3) */
+@media (min-width: 360px) {
+  /* search bar */
+  .menu input{
+    width: 25em;
+  }
+  /* plaatsing visit, explore etc.. */
+  .menu li a:nth-of-type(1){
+    font-size: 1.3em;
+  }
+  /* hr opmaak 1e stuk  */
+  .menu:first-of-type hr:nth-of-type(1){
+    margin-left: 1em;
+    width: 20.8em;
+  }
+  /* hr opmaak 2e stuk  */
+  .menu:first-of-type hr:nth-of-type(2){
+    margin-left: 1em;
+    width: 20.8em;
+  }
+  /* afbeelding in hamburger menu  */
+  .menu .online{
+    margin: 1em;
+    width: 20.5em;
+  }
+}
+
+/* responsief (iphone 6/7/8) */
+@media (min-width: 375px) {
+  /* search bar */
+  .menu input{
+    width: 26em;
+  }
+  /* plaatsing visit, explore etc.. */
+  .menu li a:nth-of-type(1){
+    font-size: 1.4em;
+  }
+  /* pijlen bij visit.. */
+  .menu li:nth-of-type(2) img{
+    margin-left: 10em;
+  }
+  /* pijlen bij explore.. */
+  .menu li:nth-of-type(3) img{
+    margin-left:8em;
+  }
+  /* hr opmaak 1e stuk  */
+  .menu:first-of-type hr:nth-of-type(1){
+    margin-left: 1em;
+    width: 21.5em;
+  }
+  /* hr opmaak 2e stuk  */
+  .menu:first-of-type hr:nth-of-type(2){
+    margin-left: 1em;
+    width: 21.5em;
+  }
+  /* afbeelding in hamburger menu  */
+  .menu .online{
+    margin: 1em;
+    width: 21.5em;
+  }
 }
 
 
 
 
-/* ---------------- VOOR IN JAVAsCRIPT ---------------- */
+/* ------------------- VOOR IN JAVAsCRIPT ------------------ */
 .visible {
   opacity: 2;
   z-index: 1;
@@ -185,7 +285,6 @@ header:first-of-type hr:nth-of-type(2){
   position: fixed;
   transition: opacity 0.4s ease;
 } 
-
 
 .invisible {
   opacity: 0;
@@ -196,131 +295,63 @@ header:first-of-type hr:nth-of-type(2){
 
 
 
+/* ------------------------- HEADER ------------------------- */
+/* -----------------------(onder stuk)---------------------- */
 
-/* ---------------- HOOFDTEKST (louvre) ---------------- */
-/*  header opmaak kleur + lengte  */
-header{
-  background-color:#000000;
-  height: 7.5em;
-}
-
-header ul:nth-of-type(2) li:nth-of-type(2) a{
-  text-decoration: none;
-  color: #ffffff;
-  letter-spacing: .1em;
-  font-size: 2em;
-  position: relative;
-  right: .8em;
-  bottom: -.55em;
-}
-
-
-/*  nav opmaak, plaatsing van nav balk */
-header nav:first-of-type{
-  display:flex;
-  flex-direction:column;
-  align-items: center;
-}
-
-
-/* ul opmaak */
-header ul:nth-of-type(2){
-  display: flex;
-  justify-content: space-between;
-  width: 96%;
-}
-
-
-
-/* ---------------- Button opmaak (tickets)---------------- */
-header ul:nth-of-type(2) li:nth-of-type(3) button{
-  background-color: #008573;
-  color: #ffffff;
-  font-size: .9em;
-  padding: .6em;
-  border-radius: 2em;
-  width: 6.5em;
-  margin: 1.3em 0em 1em;
-}
-
-
-
-
-/* ---------------- line opmaak (hr)---------------- */
-header:first-of-type hr:nth-of-type(2){
-  border-color: gray;
-  width: 21em;
-  border-bottom: 0em;
-}
-
-
-
-
-/* ---------------- 2e nav stuk (vist etc opmaak)---------------- */
+/* 2e nav stuk (vist etc plaatsing */
 header ul:nth-of-type(3){
   display: flex;
   justify-content: space-between;
+
+  list-style:var(--list);
   width: 65%;
   margin: .5em 0em 0em;
   font-size: 1.3em;
 }
 
-
-/* ---------------- tekst (vist etc opmaak)---------------- */
+/* tekst (vist etc opmaak) */
 header ul:nth-of-type(3) a{
   color:#ffffff;
-  text-decoration:var(--decoration);
-  list-style:var(--list);
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.77em;
+  text-decoration:var(--decoration);
+  font-size: 0.70em;
 }
 
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
 
-/******************************/
-/* **** Main - section 1 ***** */
-/******************************/
 
-/* ----------------1e web-display color---------------- */
+
+
+
+
+
+
+
+/*************************************************************************************/
+/* ***************************** Main - section 1 ********************************** */
+/*************************************************************************************/
+
+/* 1e background-color voor video */
 .homepage section:first-of-type {
   background-color:#f6f6f6 ;
 }
 
-
-/* ---------------- background video  ---------------- */
+/* 1e video bij home-page */
 .homepage section:nth-of-type(1) video{
   width: 100%;
   height: 34em;
   object-fit: cover;
 }
 
-
-/* ---------------- titel h2 (escape with...)----------------*/
+/* 1e titel h2 (escape with...) */
 .homepage section:nth-of-type(1) h2{
   position: absolute;
-  bottom: 11.5em;
+  bottom: 6.5em;
   color:white; 
   font: 500 1.88em/1.27 LouvreSerif,Georgia,Times New Roman,serif;
-  margin: 1.7em 2em;
-  margin-left: 3em;
+  margin: 1.9em;
 }
 
-
-
-/* ---------------- 1e in main button (book tickets) ----------------*/
+/* 1e in main button (book tickets) */
 .homepage section:nth-of-type(1) button {
   background-color: #008573;
   color: white;
@@ -329,34 +360,52 @@ header ul:nth-of-type(3) a{
   border-radius: 2em;
   width: 8em;
   position: relative;
-  left: 8em;
-  top: -15.5em;
+  left: 6.2em;
+  top: -18.5em;
 }
 
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
 
-/******************************/
-/* **** Main - section 2 ***** */
-/******************************/
 
-/*  2e web-display background-color (info covid-19 */
+
+/* responsief (galaxy note 3) */
+@media (min-width: 360px) {
+  /* 1e titel h2 (escape with...) */
+  .homepage section:nth-of-type(1) h2{
+    bottom: 6.1em;
+    margin-left: 2.7em;
+  }
+  /* 1e in main button (book tickets) */
+  .homepage section:nth-of-type(1) button{
+    left: 7.5em;
+  }
+}
+
+/* responsief (iphone 6/7/8) */
+@media (min-width: 375px) {
+  /* 1e titel h2 (escape with...) */
+  .homepage section:nth-of-type(1) h2{
+    bottom: 6.1em;
+    margin-left: 3em;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/*************************************************************************************/
+/* ***************************** Main - section 2 ********************************** */
+/*************************************************************************************/
+
+/*  2e background-color (info covid-19 */
 .homepage section:nth-of-type(2){
   background-color:#f6f6f6;
 }
-
 
 /* 2e info-image (covid-19) */
 .homepage section:nth-of-type(2) img{
@@ -366,24 +415,20 @@ header ul:nth-of-type(3) a{
   margin-top: 1.8em;
 }
 
-
-
-/* 2e (tekst covid h3 )*/
+/* 2e (titel covid h3 )*/
 .homepage section:nth-of-type(2) h3{
    font: 1em/1.5 'Montserrat',Verdana,sans-serif;
    margin: -3.2rem 5rem;
    margin-left: 6.7em;
 }
 
-
-/* 2e (tekst time-slot.... p element */
+/* 2e (tekst time-slot.... p element) */
 .homepage section:nth-of-type(2) p{
   font: 400 1em/1.56 Roboto,Open Sans,Arial,Helvetica,sans-serif;
   font-weight: bolder;
   margin: 3em 1em -0.5em;
   padding:var(--p-padding);
 }
-
 
 /* 2e (Find out more..) link */
 .homepage section:nth-of-type(2) a{
@@ -392,32 +437,26 @@ header ul:nth-of-type(3) a{
   margin: 2rem 1rem;
 }
 
-
-/* 2e (hr stuk in section 2) */
+/* 2e (hr stuk ) */
 .homepage section:nth-of-type(2) hr:nth-of-type(1){
   border-color: rgba(128, 128, 128, 0.349);
   margin-top: 4em;
   border-bottom: 0em;
 }
 
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
 
-/******************************/
-/* **** Main - section 3e **** */
-/******************************/
+
+
+
+
+
+
+
+
+
+/*************************************************************************************/
+/* ***************************** Main - section 3 ********************************** */
+/*************************************************************************************/
 
 /* 3e (tekst h2 highlights....) */
 section:nth-of-type(3) h2 {
@@ -426,48 +465,50 @@ section:nth-of-type(3) h2 {
   font-size: 2em;
 }
 
-
 /* 3e (scroll gallery) bron: flexbox oefening*/
 section:nth-of-type(3) ul{
   display: flex;
   overflow: auto;
+  list-style:var(--list) ;
+  height: 26em;
 }
-
 
 /* 3e (img wordt kleiner met dezelfde formaat) bron: flexbox oefening*/
-section:nth-of-type(3) li{
+/* section:nth-of-type(3) li{
   flex-shrink: 0;
-}
+} */
 
-
-/* tekst op img (highlights....)*/
-section:nth-of-type(3) a:first-of-type{
-  color: white;
-  position: absolute;
-  margin: 20em 6em;
-  margin-left: 2em;
-}
-
-
-/* img opmaak (highlights....) */
+/* img vorm (highlights....) */
 section:nth-of-type(3) li img{
   margin: -.4em;
-  width: 21em; 
-  height: 26em;
+  width: 18em; 
+  height: 25em;
   border-radius: 2em;
   padding:1em;
 }
 
-
-@media (min-width: 600px) {
-  section:nth-of-type(3) li img{
-    width: 38em;
-    height: 50em;
-  }
+/* tekst (link naar 2e pagina) op img (highlights....)*/
+section:nth-of-type(3) a{
+  color: white;
+  position: relative;
+  left: .99em;
+  bottom: 4em;
+  padding: .6em ;
+  font-size: 1.35em;
 }
 
+/* tekst op de rest van img (highlights....)*/
+section:nth-of-type(3) h4{
+  color: white;
+  font-weight: lighter;
+  position: relative;
+  left: .8em;
+  bottom: 4em;
+  padding: .6em ;
+  font-size: 1.35em;
+}
 
-/* 3e (hoofd tekst h3) */
+/* 3e (hoofd tekst h3 welcome to....) */
 section:nth-of-type(3) h3{
   font: 0.875em	 'Montserrat',Verdana,sans-serif;
   letter-spacing: .13em;
@@ -475,8 +516,7 @@ section:nth-of-type(3) h3{
   font-weight: bold;
 }
 
-
-/* 3e (tekst p element) */
+/* 3e (p tekst there are..... ) */
 section:nth-of-type(3) p{
   font-family:'EB Garamond',Georgia,Times New Roman,serif;
   color: #909090;
@@ -486,82 +526,96 @@ section:nth-of-type(3) p{
   padding:var(--p-padding);
 }
 
-
 /* 3e (tekst dikte) */
 strong{
   color: #000000;
 }
 
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
 
-/***************************************/
-/* *** 4e (scroll background img) **** */
-/***************************************/
+
+
+/* responsief (galaxy note 3) */
+@media (min-width: 360px) {
+  /* img vorm (highlights....) */
+  section:nth-of-type(3) li img{
+    width: 21em;
+    height: 30em;
+  }
+  /* scroll gallery */
+  section:nth-of-type(3) ul{
+    height: 31em;
+  }
+  /* tekst (link naar 2e pagina) op img (highlights..)*/
+  section:nth-of-type(3) a{
+    font-size: 1.6em;
+  }
+  /* tekst op de rest van img (highlights..)*/
+  section:nth-of-type(3) h4{
+    font-size: 1.6em;
+  }
+}  
+
+/* responsief (iphone 6/7/8) */
+@media (min-width: 375px) {
+  /* scroll gallery */
+  section:nth-of-type(3) ul{
+    height: 33em;
+  }
+}  
+
+
+
+
+
+
+
+
+
+
+
+
+/*************************************************************************************/
+/* ************** Main - section 4 (scroll background img) *************************** */
+/*************************************************************************************/
 
 /* background img (Bron: Daan studentassistent)*/
 .scroll{
-  background-image: url("/images/mainimg.jpg");
+  background-image: url("../images/mainimg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   width: 100%;
   height: 28em;
-  /* margin-bottom: 5em; */
 }
 
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
 
-/******************************/
-/* ******* 5e GALERY ******* */
-/******************************/
 
-/* 5e (galary) Bron:https://www.youtube.com/watch?v=zgXHgKad7N0 */
+
+
+
+
+
+
+
+
+/*************************************************************************************/
+/* ********************** Main - section 5 gallery ********************************** */
+/*************************************************************************************/
+
+/* 5e (gallery opmaak) Bron:https://www.youtube.com/watch?v=zgXHgKad7N0 */
 .container{
   background-color: #000000;
 }
 
-
+/* 5e titel h2 */
 .titel h2{
   color:white; 
   font-weight: lighter;
-  font-size: 2.2em;
+  font-size: 2.1em;
   padding: 1.5em;
 }
 
-
-/* @media (min-width: 600px) {
-  .titel h2{
-    margin: 7em 0em 0em;
-  }
-} */
-
-
+/* 5e img opmaak in gallery */
 .image_gallery{
   padding: 1em;
   display: grid;
@@ -570,18 +624,11 @@ strong{
   grid-column-gap: 1em;
 }
 
-
+/* 5e img lengte en breedte  */
 div img{
-  height: 12em;
+  height: 10em;
   width: 100%;
 }
-
-/* @media (min-width: 600px) {
-  div img{
-    height: 20em;
-  }
-} */
-
 
 /* button explore.. */
 section:nth-of-type(5) button{
@@ -593,50 +640,51 @@ section:nth-of-type(5) button{
   width: 8em;
   position: relative;
   top: -7em;
-  left: 7.5em;
+  left: 6em;
 }
 
-
-/* @media (min-width: 600px) {
-  section:nth-of-type(5) button{
-    top: -9em;
-    left: 16em;
+/* responsief (galaxy note 3) */
+@media (min-width: 360px) {
+  /* 5e img lengte en breedte  */
+  div img{
+    height: 11em;
   }
-} */
+  /* button explore.. */
+  section:nth-of-type(5) button{
+    left: 7.2em;
+  }
+}  
 
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
+/* responsief (iphone 6/7/8) */
+@media (min-width: 375px) {
+  /* 5e img lengte en breedte  */
+  div img{
+    height: 11em;
+  }
+  /* button explore.. */
+  section:nth-of-type(5) button{
+    left: 7.6em;
+  }
+}  
 
-/******************************/
-/* ******** FOOTER ********* */
-/******************************/
 
-/* footer opmaak */
+
+
+
+
+
+
+
+
+/*************************************************************************/
+/* **************************** FOOTER ********************************** */
+/*************************************************************************/
+
+/* footer background opmaak */
 footer{
   background-color: black;
   padding:var(--p-padding);
 }
-
-/* 6e "about" opmaak */
-/* footer :first-child ul a{
-  color: red;
-  margin: -1em 0em 1em;
-  font-family:'EB Garamond',Georgia,Times New Roman,serif;
-  font-size: 1.1em;
-  padding: 0em 0em 1em;
-} */
 
 /* (follow us) link */
 footer h3{
@@ -651,87 +699,83 @@ footer img{
   width: 4em;
 }
 
-/* hr opmaak in footer */
+/* footer hr opmaak in */
 footer hr{
   border-color: gray;
   border-bottom: 0em;
   margin: 1.1em 0rem;
-  width: 20em;
+  width: 17em;
 }
 
 /* about.. opmaak in footer */
 footer ul:first-of-type li {
-  margin: 2.5em 0em 2em;
+  margin: 2em 0em 0em;
 }
 
+/* footer tekst a opmaak, kleur etc*/
 footer a{
   color: #ffffff;
   margin: 2.5em 0em 2em;
   text-decoration: none;
 }
 
-/* legal.. opmaak in footer */
+/* footer, legal.. plaatsing */
 footer ul {
   margin-top: 3em;
   margin-bottom: 3em;
 }
 
-
-/* footer ul li{
-  margin-top: .3em; 
-} */
-
-
-
 /* Footer img (uiteinde) */
 footer ul img{
-  width: 15em;
+  width: 12em;
   margin: 8em 1.5em 1em;
 }
 
-/* @media (min-width: 600px) {
-  footer hr:first-of-type{
-    width: 36em;
+
+
+
+/* responsief (galaxy note 3) */
+@media (min-width: 360px) {
+/* footer hr opmaak in */
+  footer hr{
+    width: 19em;
+  }
+  /* Footer img (uiteinde) */
+  footer ul img{
+    width: 15em;
   }
 }
 
-@media (min-width: 600px) {
-  footer:nth-of-type(1) ul:nth-of-type(2) img{
-    width: 15em;
-    margin: 8em 10em 1em;
+/* responsief (iphone /6/7/8) */
+@media (min-width: 375px) {
+/* footer hr opmaak in */
+  footer hr{
+    width: 20em;
   }
-} */
+}
 
 
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
 
 
-/* **************** 2e pagina van website ***************** */
 
-/* ********************* Mona Lisa ********************** */
 
-/* opmaak 1e section*/
+
+
+
+
+
+/*************************************************************************/
+/* **************************** 2e pagina ****************************** */
+/****************************** Mona Lisa ********************************/
+
+/* 1e background-color voor begin scherm*/
 .monalisa section:first-of-type{
   background-color: #1a1a1a;
   display: grid;
   height: 50em;
 }
 
-
-/* hoofd tekst opmaak h2 (from the mona..) */
+/* 1e titel h2 (from the mona..) */
 .monalisa section:nth-of-type(1) h2:first-of-type{
   color: #ffffff;
   font: 500 1.88em/1.27 LouvreSerif,Georgia,Times New Roman,serif;
@@ -740,8 +784,7 @@ footer ul img{
   margin-left: 1.5em;
 }
 
-
-/* p tekst (the salle....)*/
+/* 1e p tekst (the salle....)*/
 .monalisa section:nth-of-type(1) p:first-of-type{
   color: #ffffff;
   font-family: LouvreSerif,Georgia,Times New Roman,serif;
@@ -749,8 +792,7 @@ footer ul img{
   margin-top: -7.5em;
 }
 
-
-/* img (mona lisa portret...)*/
+/* 1e img (mona lisa portret...)*/
 .monalisa section:nth-of-type(1) img:first-of-type{
   width: 100%;
   height: 29em;
@@ -758,16 +800,14 @@ footer ul img{
   background-color: #1a1a1a;
 }
 
-
-
-/* p element (room 711...)*/
+/* 1e p element (room 711...) */
 .monalisa section:nth-of-type(2) p:nth-of-type(1){
  margin-top: 7.5em;
  font-size: 1em;
  padding: .10em 2em; 
 }
 
-
+/* 1e (2e p element, room 711...) */
 .monalisa section:nth-of-type(3) p:nth-of-type(1){
   color: #000000;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -777,39 +817,26 @@ footer ul img{
   text-align: center;
 }
 
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-
-/******************************/
-/* **** "a did you know" blue **** */
-/******************************/
-
-/* hr styling */
-/* .monalisa main hr{
-  border-color: grey;
-  border-top: 0em;
-} */
 
 
-/* "did you know" styling */
+
+
+
+
+
+
+
+
+/*************************************************************************/
+/* ************************* did you know (blue) ************************ */
+/*************************************************************************/
+
+/* h4 "did you know" styling */
 .monalisa section:nth-of-type(4){
   background-color: #f6f6f6 ;
 }
 
-
-/* "did you know" styling tekst*/
+/* kopje "did you know" styling */
 .monalisa section:nth-of-type(4) h4:first-of-type{
   padding: var(--p-padding);
   color: #0000e0;
@@ -817,19 +844,17 @@ footer ul img{
   top: 2em;
 }
 
-
-/* "did you know" styling line*/
+/* hr styling "did you know" */
 .monalisa section:nth-of-type(4) hr:first-of-type{
   background-color: #f6f6f6;
   opacity: 20%;
   position: relative;
   top: -.6em;
   left: 9em;
-  width: 13em;
+  width: 9em;
 }
 
-
-/* "mona lisa" styling tekst*/
+/* h3 tekst "mona lisa" */
 .monalisa section:nth-of-type(4) h3:first-of-type{
   font-size: 1.5em;
   font-weight: lighter;
@@ -837,19 +862,17 @@ footer ul img{
   margin: .5em 0em;
 }
 
-
-/* "tekst p " styling */
+/* p tekst styling */
 .monalisa section:nth-of-type(4) p:first-of-type{
   padding: 1.2em;
-  font-size: 1.5em;
+  font-size: 1.3em;
   font-family: 'Times New Roman', Times, serif;
   color: #000000d0;
   font-weight: lighter;
   margin-top: -2.2em;
 }
 
-
-/* "img" styling image*/
+/* image styling */
 .monalisa section:nth-of-type(4) img:first-of-type{
   padding: 1em ;
   height: 18em ;
@@ -857,29 +880,24 @@ footer ul img{
   width: 100%; 
 }
 
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
 
-/******************************/
-/* **** "a new blue" **** */
-/******************************/
 
-/* artikelen h2 + p teksten */
+
+
+
+
+
+
+
+
+/*************************************************************************/
+/* ****************************** a new blue  *************************** */
+/**************************************************************************/
+
+/* kopje h2 + p teksten   1 */
 .monalisa section:nth-of-type(5) h2:nth-of-type(1){
   font: 500 1.88em/1.27 LouvreSerif,Georgia,Times New Roman,serif;
-  margin: 2em 6em 0em;
+  margin: 2em 1em 0em;
   margin-left: 1em;
 }
 
@@ -888,63 +906,47 @@ footer ul img{
   margin-top: -1em;
 }
 
-
-/* artikelen h2 + p teksten */
+/* kopje h2 + p teksten   2 */
 .monalisa section:nth-of-type(5) h2:nth-of-type(2){
   font: 500 1.88em/1.27 LouvreSerif,Georgia,Times New Roman,serif;
   margin: .9em 2em 0em;
   margin-left: 1em;
 }
 
-
-/* artikelen h2 + p teksten */
+/* kopje h2 + p teksten   3 */
 .monalisa section:nth-of-type(5) h2:nth-of-type(3){
   font: 500 1.88em/1.27 LouvreSerif,Georgia,Times New Roman,serif;
   margin: .9em 2em 0em;
   margin-left: 1em;
 }
 
-/* "img" styling image*/
+/* image styling */
 .monalisa section:nth-of-type(5) img:first-of-type{
   height: 35em ;
   margin-top: 3em ;
   width: 100%;
 }
 
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-
-/******************************/
-/* **** "did you know" red **** */
-/******************************/
 
 
-/* hr styling
-.monalisa main hr{
-  border-color: grey;
-  border-top: 0em;
-} */
 
 
-/* "did you know" styling */
+
+
+
+
+
+
+/*************************************************************************/
+/* ****************************** did you know (red) *************************** */
+/**************************************************************************/
+
+/* h4 did you know styling (red) */
 .monalisa section:nth-of-type(6){
   background-color: #f6f6f6 ;
 }
 
-
-/* "did you know" styling tekst*/
+/* kopje "did you know" styling */
 .monalisa section:nth-of-type(6) h4:first-of-type{
   padding: var(--p-padding);
   color: red;
@@ -952,19 +954,17 @@ footer ul img{
   top: 2em;
 }
 
-
-/* "did you know" styling line*/
+/* hr styling "did you know" */
 .monalisa section:nth-of-type(6) hr:first-of-type{
   background-color: #f6f6f6;
   opacity: 20%;
   position: relative;
   top: -.6em;
   left: 9em;
-  width: 13em;
+  width: 9em;
 }
 
-
-/* "mona lisa" styling tekst*/
+/* h3 tekst "painting" */
 .monalisa section:nth-of-type(6) h3:first-of-type{
   font-size: 1.5em;
   font-weight: lighter;
@@ -972,8 +972,7 @@ footer ul img{
   margin: .7em 0em;
 }
 
-
-/* "p" styling tekst*/
+/* p tekst styling */
 .monalisa section:nth-of-type(6) p:first-of-type{
   padding: 1.3em;
   font-size: 1.2em;
@@ -983,8 +982,7 @@ footer ul img{
   margin-top: -2.8em;
 }
 
-
-/* "img" styling image*/
+/* image styling (portret)*/
 .monalisa section:nth-of-type(6) img:first-of-type{
   padding: 1em ;
   height: 20em ;
@@ -992,12 +990,49 @@ footer ul img{
   width: 100%;
 }
 
-
+/* kleine info over portret p element*/
 .monalisa section:nth-of-type(6) p:nth-of-type(2){
-  margin-top: -11em;
-  font-size: 1em;
+  margin-top: -13em;
+  font-size: .8em;
   padding: 5em 2em; 
- }
+}
 
 
+/*************************************************************************/
+/* ****************************** formulier *************************** */
+/**************************************************************************/
 
+.formulier{
+  color: white;
+  font-family:'EB Garamond',Georgia,Times New Roman,serif;
+  font-size: 1.1em;
+  margin: 2em 0rem;
+}
+
+fieldset{
+  border-color: #008573;
+  padding: 0em 4em;
+}
+
+legend{
+  color: white;
+  font-size: 1em;
+  margin: 1.5em;
+}
+
+label{
+  color: white;
+  margin: 1.7em;
+}
+
+form [type=submit]{
+  border: none;
+  color: white;
+  background-color: #008573;
+  font-size: .7em;
+  padding: .7em;
+  border-radius: 2em;
+  width: 8em;
+  margin: 1.5em;
+  margin-left: 16.2em;
+}
