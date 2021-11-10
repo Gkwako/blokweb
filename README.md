@@ -263,3 +263,86 @@ Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 5. Video (regel: 73) bron: https://www.youtube.com/watch?v=05ZHUuQVvJM 
 
 </details>
+
+
+
+
+<!--  
+<body class="homepage">
+	<!-- hier is de hamburger menu (rechts boven) -->
+	<header>
+		<nav id="menuToggle">
+			<ul>
+				<li><input type="checkbox" />
+
+					<span></span>
+					<span></span>
+					<span></span>
+
+					<ul>
+						<!-- Bron: https://www.youtube.com/watch?v=UOGvJhvLUg0 -->
+						<input class="search" type="text" name="" placeholder="Search...">
+
+						<hr>
+
+						<a href="https://www.louvre.fr/en/visit">
+							<li>Visit</li>
+						</a>
+						<a href="https://www.louvre.fr/en/explore">
+							<li>Explore</li>
+						</a>
+						<a href="https://www.louvre.fr/en/what-s-on">
+							<li>What's on</li>
+						</a>
+
+						<hr>
+
+						<a href="https://boutique.louvre.fr/?lang=en"><img src="images/onlineb.jpg"
+								alt="online boutique afbeelding">
+				</li></a>
+
+				<hr>
+
+				<h4>
+					<a href="https://www.facebook.com/museedulouvre"><img src="images/fb.jpg" alt=""></a>
+					<a href="https://www.instagram.com/museelouvre/"><img src="images/insta.jpg" alt=""></a>
+					<a href="https://twitter.com/museelouvre"><img src="images/tweet.jpg" alt=""></a>
+					<a href="https://www.youtube.com/user/louvre"><img src="images/yt.jpg" alt=""></a>
+					<a href="https://www.pinterest.fr/museedulouvre/_created/"><img src="images/pint.jpg" alt=""></a>
+					<a href="https://www.linkedin.com/company/musee-du-louvre/?originalSubdomain=fr"><img
+							src="images/link.jpg" alt=""></a>
+				</h4>
+
+				<li><img src="images/louvre.jpg" alt="louvre"></li>
+			</ul>
+			</li>
+
+			<li>
+				<ul>
+					<li><a href="#">Louvre</a></li>
+
+					<hr>
+
+				</ul>
+
+			</li>
+			<li>
+			<li><button> Tickets </button></li>
+			</li>
+
+			</ul>
+
+
+
+			<!-- hier is de navigatie menu -->
+
+
+
+
+			<ul>
+				<li><a href="https://www.louvre.fr/en/visit">VISIT</a></li>
+				<li><a href="https://www.louvre.fr/en/explore">EXPLORE</a></li>
+				<li><a href="https://www.louvre.fr/en/what-s-on">WHAT'S ON </a></li>
+			</ul>
+		</nav>
+	</header>

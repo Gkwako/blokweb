@@ -4,529 +4,429 @@
 *, *::after, *::before {
   box-sizing:border-box;  
   margin: 0%;
-  padding: 0%;
+  padding: 0%
 }
+
 
 /* shortcuts */
 :root{
   --p-padding: 2em;
-  --border: none;
   --decoration: none;
   --list: none;
-}
+  --border:none;
 
-/* alle button opmaak */
-button {
-  border:var(--border);
-} 
+  --border-color:grey;
+  --border-color2:rgba(128, 128, 128, 0.349);
 
 
+  --color:#ffffff;
+  --color2:white;
+  --color3:#909090;
+  --color4: #000000;
 
+  --background-color:#000000;
+  --background-color2:#f6f6f6;
+  --background-color3:#008573;
+  --background-color4:#1a1a1a;
 
-/* ------------------------- HEADER ------------------------- */
-/* ----------------------(bovenste stuk)--------------------- */
-
-/* header opmaak kleur + lengte  */
-header{
-  background-color:#000000;
-  height: 7.5em;
-}
-
-/* hamburger menu icon opmaak */
-header ul:nth-of-type(2) img:first-of-type{
-  width: 3.2em;
-  height: 3.1em;
-  margin-bottom: -3em;
-}
-
-/* hamburger menu button icon (invisible gemaakt) */
-header ul:nth-of-type(2) button:first-of-type{
-  width: 0em;
-}
-
-/* titel (louvre) */
-header ul:nth-of-type(2) li:nth-of-type(2) a{
-  text-decoration: none;
-  color: #ffffff;
-  letter-spacing: .1em;
-  font-size: 2em;
-  position: relative;
-  right: .3em;
-  bottom: -.55em;
-}
-
-/* nav opmaak, plaatsing van nav balk */
-header nav:first-of-type{
-  display:flex;
-  flex-direction:column;
-  align-items: center;
-}
-
-/* ul opmaak, ruimte tussen icon en button*/
-header ul:nth-of-type(2){
-  display: flex;
-  justify-content: space-between;
-  width: 96%;
-}
-
-/* Button opmaak (tickets */
-header ul:nth-of-type(2) li:nth-of-type(3) button{
-  background-color: #008573;
-  color: #ffffff;
-  font-size: .9em;
-  padding: .6em;
-  border-radius: 2em;
-  width: 6.5em;
-  margin: 1.3em 0em 1em;
-}
-
-/* line opmaak hr */
-header:first-of-type hr:nth-of-type(1){
-  border-color: gray;
-  width: 17em;
-  border-bottom: 0em;
+  --font-familyBold: Arial, Helvetica, sans-serif;
 }
 
 
 
 
-/* responsief (galaxy note 3) */
-@media (min-width: 360px) {
-  /* titel (louvre) */
-  header ul:nth-of-type(2) li:nth-of-type(2) a{
-    right: .9em;
-  }
-  /* line opmaak hr */
-  header:first-of-type hr:nth-of-type(1){
-    width: 20em;
-  }
+/*************************************************************************************/
+/* ******************************* Hamburger menu ********************************** */
+/*************************************************************************************/
+
+/* buttonOpen opmaak */
+header nav > button{
+  margin: .5em .5em 0;
+  background: none;
+  border: none;
 }
 
+/* buttonClose opmaak */
+header .icon-x{
+  
+  background: none;
+  border: none;
+}
 
-
-
-/* ------------------------- HAMBURGER MENU ------------------------- */
-
-/* in het hamburger menu opmaak */
- .menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  z-index: -1;
-  background-color:#1A1A1Aff;
-  padding-top: 1em;
-  opacity: 0;
-  transform: translateX(-100%); 
-} 
-
-/* hamburger button (kruisje) opmaak */
-.menu button img:first-of-type{
+/* grote van hamburger menu img */
+header button > img{
   width: 4em;
-  height: 4.5em;
-  margin-bottom: -1em;
-  margin-left: .5em;
 }
 
-/* in het hamburger menu button (invisible gemaakt)*/
-.menu button{
-  width: 0em;
+
+
+/* in hamburger menu , vormgeving */
+.menu {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 0.3s ease-in-out;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0; 
+
+  background-color: var(--background-color4);
+  width: 100%;
+  z-index: 1;
 }
 
-/* search bar opmaak*/
-.menu input{
-  width: 22em;
-  height: 4.5em;
-  margin: 1.1em;
+.visible {
+  opacity: 1;
+  transform: translateX(0%);
+  transition: all 0.3s ease-in-out;
+
+  /* scrollbar bron: louvre website */
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* in hamburger menu "img kruisje" */
+.icon-x img:nth-of-type(1){
+  display: flex;
+  position: absolute;
+  top: .5em;
+  left: .5em;
+}
+
+
+/* search bar */
+.menu li > input{
+  width: 100%;
+  margin-top: 3em;
+  padding: 1.7em; 
   border-radius: .3em;
-  padding: 1.5em ;
   border:var(--border);
 }
 
-/* hr opmaak (bij search bar) 1e stuk*/
-.menu:first-of-type hr:nth-of-type(1){
-  border-color: gray;
-  margin-left: 1em;
-    width: 18em;
-  border-bottom: 0em;
+
+/* hamburger menu tekst vormgeving  */
+.menu a{
+  font-family: var(--font-familyBold);
+  color: var(--background-color2);
+  text-decoration: var(--decoration);
 }
 
-/* plaatsing tekst visit, explore etc.. */
-.menu li a:nth-of-type(1) {
-  margin: 2em ;
-  color: white;
-  text-decoration:var(--decoration);
-  list-style:var(--list);
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.1em;
-}
-
-/* opmaak pijlen & plaatsing van tekst */
-.menu li:nth-of-type(2){
-  margin: 3em 0em 2em;
+/* alle li vormgeving in hamburger menu*/
+.menu li {
+  /* display: flex; */
+  margin: 1.3em;
+  list-style: var(--list);
 }
 
 
-/* pijl bij visit.. */
-.menu li:nth-of-type(2) img{
-  margin: -2em;
-  margin-left: 9em;
+/* de 3 teksten (V,E,W) in de hmaburger menu vormgeving */
+.menu li:nth-of-type(3) {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.4em;
+  padding: .5em;
 }
 
-.menu li:nth-of-type(3){
-  margin: 3em 0em;
-}
-
-
-/* pijl bij explore.. */
+/* grote img "pijlen" */
 .menu li:nth-of-type(3) img{
-  margin: -2em;
-  margin-left: 7.5em;
-}
-
-.menu li:nth-of-type(4){
-  margin: 3em 0em;
-}
-
-
-/* pijl bij what's on.. */
-.menu li:nth-of-type(4) img{
-  margin: -2em;
-  margin-left: 6em;
-}
-
-
-/* hr opmaak 2e stuk  */
-.menu:first-of-type hr:nth-of-type(2){
-  border-color: gray;
-  margin-left: 1em;
-  width: 18em;
-  border-bottom: 0em;
-}
-
-/* afbeelding in hamburger menu  */
-.menu .online{
-  margin: 2em;
-  width: 16.5em;
+  position: relative;
+  top: -2em;
+  width: 2.3em;
+  margin-left: 85%;
 }
 
 
 
-/* responsief (galaxy note 3) */
-@media (min-width: 360px) {
-  /* search bar */
-  .menu input{
-    width: 25em;
-  }
-  /* plaatsing visit, explore etc.. */
-  .menu li a:nth-of-type(1){
-    font-size: 1.3em;
-  }
-  /* hr opmaak 1e stuk  */
-  .menu:first-of-type hr:nth-of-type(1){
-    margin-left: 1em;
-    width: 20.8em;
-  }
-  /* hr opmaak 2e stuk  */
-  .menu:first-of-type hr:nth-of-type(2){
-    margin-left: 1em;
-    width: 20.8em;
-  }
-  /* afbeelding in hamburger menu  */
-  .menu .online{
-    margin: 1em;
-    width: 20.5em;
-  }
+/* in hamburger menu "img van online boutique" grote*/
+.menu li .online{
+  width: 95%;
+  margin: 1em ;
 }
 
-/* responsief (iphone 6/7/8) */
-@media (min-width: 375px) {
-  /* search bar */
-  .menu input{
-    width: 26em;
-  }
-  /* plaatsing visit, explore etc.. */
-  .menu li a:nth-of-type(1){
-    font-size: 1.4em;
-  }
-  /* pijlen bij visit.. */
-  .menu li:nth-of-type(2) img{
-    margin-left: 10em;
-  }
-  /* pijlen bij explore.. */
-  .menu li:nth-of-type(3) img{
-    margin-left:8em;
-  }
-  /* hr opmaak 1e stuk  */
-  .menu:first-of-type hr:nth-of-type(1){
-    margin-left: 1em;
-    width: 21.5em;
-  }
-  /* hr opmaak 2e stuk  */
-  .menu:first-of-type hr:nth-of-type(2){
-    margin-left: 1em;
-    width: 21.5em;
-  }
-  /* afbeelding in hamburger menu  */
-  .menu .online{
-    margin: 1em;
-    width: 21.5em;
-  }
+/* grote van img */
+.media img{
+  width: 4.5em;
 }
 
 
 
+/*************************************************************************************/
+/* ************************* Header - Navigatie menu ******************************* */
+/*************************************************************************************/
 
-/* ------------------- VOOR IN JAVAsCRIPT ------------------ */
-.visible {
-  opacity: 2;
-  z-index: 1;
-  transform: translateX(0%);
+/* header vormgeving (kleur + lengte) */
+header nav {
   position: fixed;
-  transition: opacity 0.4s ease;
+  background-color:var( --background-color);
+  width: 100%;
+  height: 8em;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+/* 1e stuk navigatiebalk "titel + button" opmaak */
+header ul:nth-of-type(2){
+  position: relative;
+  left: 3.5em;
+  bottom: 2.5em; 
+  display: flex;
+
+  justify-content: space-between;
+  width: 80%;
+  list-style:var(--list);
+}
+
+/* 1e stuk navigatiebalk titel opmaak */
+header ul:nth-of-type(2) a{
+  font-size: 2em;
+  letter-spacing: .1em;
+  color: var(--color2);
+  text-decoration: var(--decoration);
+}
+
+/* 1e stuk navigatiebalk button "tickets" opmaak */
+header ul:nth-of-type(2) button:first-of-type{
+  font-size: .9em;
+  padding: .7em;
+  border-radius: 2em;
+  width: 6em;
+  
+  color: var(--color);
+  border:var(--border);
+  background-color: var(--background-color3);
+}
+
+/* hr vormgeving */
+header hr{
+  width: 90%;
+  margin-top: -1.5em;
+  margin-left: 1em;
+
+  border-bottom: 0em;
+  border-color: var(--border-color);
 } 
 
-.invisible {
-  opacity: 0;
-  z-index: 0;
-  transform: translateX(0%);
-} 
 
-
-
-
-/* ------------------------- HEADER ------------------------- */
-/* -----------------------(onder stuk)---------------------- */
-
-/* 2e nav stuk (vist etc plaatsing */
+/* 2e stuk navigatiebalk tekst opmaak*/
 header ul:nth-of-type(3){
   display: flex;
-  justify-content: space-between;
-
-  list-style:var(--list);
-  width: 65%;
-  margin: .5em 0em 0em;
-  font-size: 1.3em;
+  justify-content: center;
+  font-size: .8em;
+  font-weight: bold;
+  gap: 2.5em;
+  padding: 1.5em;
 }
 
-/* tekst (vist etc opmaak) */
+/* 2e stuk navigatiebalk "V,E,W" font */
 header ul:nth-of-type(3) a{
-  color:#ffffff;
+  letter-spacing: .1em;
   font-family: Arial, Helvetica, sans-serif;
-  text-decoration:var(--decoration);
-  font-size: 0.70em;
+  color: var(--color2);
+  text-decoration: var(--decoration);
 }
 
 
 
 
 
-
-
-
-
-
 /*************************************************************************************/
-/* ***************************** Main - section 1 ********************************** */
+/* *********************** Main - section 1: Video ********************************* */
 /*************************************************************************************/
 
-/* 1e background-color voor video */
+/* video background opmaak */
 .homepage section:first-of-type {
-  background-color:#f6f6f6 ;
+  background-color:var(--background-color2);
 }
 
-/* 1e video bij home-page */
+/* video stijling opmaak */
 .homepage section:nth-of-type(1) video{
   width: 100%;
-  height: 34em;
+  height: 99vh;
   object-fit: cover;
 }
 
-/* 1e titel h2 (escape with...) */
+/* hoofdtekst h2 (escape with...) */
 .homepage section:nth-of-type(1) h2{
   position: absolute;
-  bottom: 6.5em;
+  text-align: center;
+  /* letter-spacing: .1em; */
+  bottom: 9em;
+  padding: 1.5em;
   color:white; 
+  width: 100%;
   font: 500 1.88em/1.27 LouvreSerif,Georgia,Times New Roman,serif;
-  margin: 1.9em;
 }
 
-/* 1e in main button (book tickets) */
-.homepage section:nth-of-type(1) button {
+/* main button (book tickets) */
+.homepage section:nth-of-type(1) button{
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+
   background-color: #008573;
   color: white;
   font-size: 1em;
   padding: .7em;
   border-radius: 2em;
   width: 8em;
-  position: relative;
-  left: 6.2em;
-  top: -18.5em;
+  border:var(--border);
 }
-
-
-
-
-/* responsief (galaxy note 3) */
-@media (min-width: 360px) {
-  /* 1e titel h2 (escape with...) */
-  .homepage section:nth-of-type(1) h2{
-    bottom: 6.1em;
-    margin-left: 2.7em;
-  }
-  /* 1e in main button (book tickets) */
-  .homepage section:nth-of-type(1) button{
-    left: 7.5em;
-  }
-}
-
-/* responsief (iphone 6/7/8) */
-@media (min-width: 375px) {
-  /* 1e titel h2 (escape with...) */
-  .homepage section:nth-of-type(1) h2{
-    bottom: 6.1em;
-    margin-left: 3em;
-  }
-}
-
-
-
-
-
 
 
 
 
 
 /*************************************************************************************/
-/* ***************************** Main - section 2 ********************************** */
+/* *********************** Main - section 2: COVID-19 ****************************** */
 /*************************************************************************************/
 
-/*  2e background-color (info covid-19 */
+/* "info covid-19" background opmaak */
 .homepage section:nth-of-type(2){
-  background-color:#f6f6f6;
+  background-color:#f6f6f6 ;
 }
 
-/* 2e info-image (covid-19) */
+
+/* "info covid-19" img opmaak */
 .homepage section:nth-of-type(2) img{
   width: 3em;
   height: 2.5em;
-  margin-left: 2.9em;
-  margin-top: 1.8em;
 }
 
-/* 2e (titel covid h3 )*/
+
+
+/* "info covid-19" hoofdtekst h3*/
 .homepage section:nth-of-type(2) h3{
-   font: 1em/1.5 'Montserrat',Verdana,sans-serif;
-   margin: -3.2rem 5rem;
-   margin-left: 6.7em;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  padding: 4em 3em 0em;
+  font: 1em/1.5 'Montserrat',Verdana,sans-serif;
 }
 
-/* 2e (tekst time-slot.... p element) */
+
+/* "time-slot.... " tekst opmaak */
 .homepage section:nth-of-type(2) p{
   font: 400 1em/1.56 Roboto,Open Sans,Arial,Helvetica,sans-serif;
   font-weight: bolder;
-  margin: 3em 1em -0.5em;
-  padding:var(--p-padding);
+  margin: 0.7em;
+  padding: 2em 2em 1em;
 }
 
-/* 2e (Find out more..) link */
+
+/* "Find out more.." link */
 .homepage section:nth-of-type(2) a{
-  padding:var(--p-padding);
-  color: #000000;
-  margin: 2rem 1rem;
+  padding: 3em;
+  color: var(--color4);
+  font: .8em/1 'Montserrat',Verdana,sans-serif;
 }
 
-/* 2e (hr stuk ) */
+
+/* "hr opmaak" */
 .homepage section:nth-of-type(2) hr:nth-of-type(1){
-  border-color: rgba(128, 128, 128, 0.349);
   margin-top: 4em;
   border-bottom: 0em;
+  border-color: var(--border-color2);
 }
 
 
 
 
 
-
-
-
-
-
-
 /*************************************************************************************/
-/* ***************************** Main - section 3 ********************************** */
+/* ************************ Main - section 3: HIGHLIGHTS *************************** */
 /*************************************************************************************/
 
-/* 3e (tekst h2 highlights....) */
-section:nth-of-type(3) h2 {
-  margin: 3em 1em;
-  font: 400 1.5em/1.27 'LouvreSerif',Georgia,Times New Roman,serif;
-  font-size: 2em;
+/* "highlights...." hoofdtekst */
+.homepage section:nth-of-type(3) h2 {
+  padding: 2em;
+  font: 2em 'LouvreSerif',Georgia,Times New Roman,serif;
 }
 
-/* 3e (scroll gallery) bron: flexbox oefening*/
-section:nth-of-type(3) ul{
+
+/* "scroll gallery" bron: flexbox oefening*/
+.homepage section:nth-of-type(3) ul{
   display: flex;
   overflow: auto;
-  list-style:var(--list) ;
-  height: 26em;
+  height: 60vh;
+  width: 100%;
+  list-style:var(--list);
 }
 
-/* 3e (img wordt kleiner met dezelfde formaat) bron: flexbox oefening*/
-/* section:nth-of-type(3) li{
-  flex-shrink: 0;
-} */
 
-/* img vorm (highlights....) */
-section:nth-of-type(3) li img{
-  margin: -.4em;
-  width: 18em; 
-  height: 25em;
-  border-radius: 2em;
-  padding:1em;
+/* "scroll gallery" img vormgeving*/
+.homepage section:nth-of-type(3) li img{
+  width: 19em; 
+  height: 59vh;
+  border-radius: 1.3em;
+  padding: 0.7em;
 }
 
-/* tekst (link naar 2e pagina) op img (highlights....)*/
-section:nth-of-type(3) a{
-  color: white;
+
+/* tekst h4 op img "highlights...."*/
+.homepage section:nth-of-type(3) h4{
   position: relative;
-  left: .99em;
-  bottom: 4em;
-  padding: .6em ;
-  font-size: 1.35em;
+  bottom: 10em; 
+  padding: 0em 2.9em 0em;
+  font-size: 1em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+
+  color: var(--color2);
+  /* /* font:  23px/1.33 LouvreSerif,Georgia,Times New Roman,serif;  */
 }
 
-/* tekst op de rest van img (highlights....)*/
-section:nth-of-type(3) h4{
-  color: white;
-  font-weight: lighter;
+
+
+/* tekst middelste stuk op img "link naar 2e pagina" */
+.homepage section:nth-of-type(3) a{
+  display: flex;
   position: relative;
-  left: .8em;
-  bottom: 4em;
-  padding: .6em ;
-  font-size: 1.35em;
+  bottom: 7.5em; 
+  font-size: 1.2em;
+  padding: 0em 2.5em 0em;
+  color: var(--color2);
+  text-decoration: var(--decoration);
+  /* font: 1.5em LouvreSerif,Georgia,Times New Roman,serif; */
 }
 
-/* 3e (hoofd tekst h3 welcome to....) */
-section:nth-of-type(3) h3{
+
+/* tekst h5 laatste stuk op img l"highlights...."*/
+.homepage section:nth-of-type(3) h5{
+  position: relative;
+  bottom: 9.5em; 
+  padding: 0em 3.7em 0em;
+ 
+  /* font-family: Arial, Helvetica, sans-serif; */
+
+  color: var(--color2);
+  font: .8em LouvreSerif,Georgia,Times New Roman,serif; 
+}
+
+
+/* welcome to.. hoofdtekst  */
+.homepage section:nth-of-type(3) h3{
   font: 0.875em	 'Montserrat',Verdana,sans-serif;
-  letter-spacing: .13em;
-  margin: 5.5em 3em 0em;
   font-weight: bold;
+  padding: 5em 3em 1em;
+  letter-spacing: .13em;
 }
 
-/* 3e (p tekst there are..... ) */
-section:nth-of-type(3) p{
+
+/* welcome to.. p element*/
+.homepage section:nth-of-type(3) p{
   font-family:'EB Garamond',Georgia,Times New Roman,serif;
-  color: #909090;
-  line-height: 1.677em;
-  font-size: 1.235em;
-  margin: 0em 0em 3em;
-  padding:var(--p-padding);
+  font-size: 1.2em;
+  line-height: 1.7em;
+  padding: 1.3em 2em 5em;
+  color: var(--color3);
 }
 
-/* 3e (tekst dikte) */
+
+/* welcome to.. p element, dik gedrukt */
 strong{
   color: #000000;
 }
@@ -534,49 +434,15 @@ strong{
 
 
 
-/* responsief (galaxy note 3) */
-@media (min-width: 360px) {
-  /* img vorm (highlights....) */
-  section:nth-of-type(3) li img{
-    width: 21em;
-    height: 30em;
-  }
-  /* scroll gallery */
-  section:nth-of-type(3) ul{
-    height: 31em;
-  }
-  /* tekst (link naar 2e pagina) op img (highlights..)*/
-  section:nth-of-type(3) a{
-    font-size: 1.6em;
-  }
-  /* tekst op de rest van img (highlights..)*/
-  section:nth-of-type(3) h4{
-    font-size: 1.6em;
-  }
-}  
-
-/* responsief (iphone 6/7/8) */
-@media (min-width: 375px) {
-  /* scroll gallery */
-  section:nth-of-type(3) ul{
-    height: 33em;
-  }
-}  
-
-
-
-
-
-
-
-
-
-
-
 
 /*************************************************************************************/
-/* ************** Main - section 4 (scroll background img) *************************** */
+/* ************************* Main - section 4 (scroll) ***************************** */
 /*************************************************************************************/
+
+/* h2 tekst in scroll verstopt*/
+.scroll h2{
+  opacity: 0;
+}
 
 /* background img (Bron: Daan studentassistent)*/
 .scroll{
@@ -585,37 +451,30 @@ strong{
   background-size: cover;
   background-attachment: fixed;
   width: 100%;
-  height: 28em;
+  height: 50vh;
 }
 
 
 
 
-
-
-
-
-
-
-
 /*************************************************************************************/
-/* ********************** Main - section 5 gallery ********************************** */
+/* ************************* Main - section 4 (gallery) ***************************** */
 /*************************************************************************************/
 
-/* 5e (gallery opmaak) Bron:https://www.youtube.com/watch?v=zgXHgKad7N0 */
+/* gallery opmaak Bron:https://www.youtube.com/watch?v=zgXHgKad7N0 */
 .container{
-  background-color: #000000;
+  background-color:var( --background-color);
 }
 
-/* 5e titel h2 */
+/* hoofdtekst gallery h2 */
 .titel h2{
-  color:white; 
-  font-weight: lighter;
   font-size: 2.1em;
+  font-weight: lighter;
   padding: 1.5em;
+  color:var(--color2); 
 }
 
-/* 5e img opmaak in gallery */
+/* gallery img opmaak */
 .image_gallery{
   padding: 1em;
   display: grid;
@@ -624,140 +483,157 @@ strong{
   grid-column-gap: 1em;
 }
 
-/* 5e img lengte en breedte  */
+/* img lengte en breedte  */
 div img{
-  height: 10em;
+  height: 100%;
   width: 100%;
 }
 
 /* button explore.. */
-section:nth-of-type(5) button{
-  background-color: white;
-  color: black;
-  font-size: 1em;
-  padding: .9em;
-  border-radius: 2em;
-  width: 8em;
+.container button{
   position: relative;
-  top: -7em;
-  left: 6em;
+  left: 50%;
+  bottom: 9em;
+  transform: translate(-50%, 50%);
+ 
+  font-size: 1em;
+  padding: .7em;
+  width: 8em;
+  border-radius: 2em;
+  border: var(--border);
+  background-color: var(--background-color2);
 }
 
-/* responsief (galaxy note 3) */
-@media (min-width: 360px) {
-  /* 5e img lengte en breedte  */
-  div img{
-    height: 11em;
-  }
-  /* button explore.. */
-  section:nth-of-type(5) button{
-    left: 7.2em;
-  }
-}  
-
-/* responsief (iphone 6/7/8) */
-@media (min-width: 375px) {
-  /* 5e img lengte en breedte  */
-  div img{
-    height: 11em;
-  }
-  /* button explore.. */
-  section:nth-of-type(5) button{
-    left: 7.6em;
-  }
-}  
 
 
+/*************************************************************************************/
+/* ******************************* Footer  ******************************************* */
+/*************************************************************************************/
 
-
-
-
-
-
-
-
-/*************************************************************************/
-/* **************************** FOOTER ********************************** */
-/*************************************************************************/
-
-/* footer background opmaak */
+/* footer opmaak */
 footer{
-  background-color: black;
   padding:var(--p-padding);
+  background-color:var( --background-color);
 }
 
-/* (follow us) link */
-footer h3{
-  color: white;
-  font-family:'EB Garamond',Georgia,Times New Roman,serif;
-  font-size: 1.1em;
-  margin: 3em 0rem;
+/* tekst plaatsing "A,O,C"  */
+footer ul:first-of-type li {
+  margin: 2em 0em 0em; 
 }
+
+/* pijlen bij "A,O,C" in footer */
+footer ul:first-of-type img {
+  position: relative;
+  top: -2.5em;
+  width: 2.3em;
+  margin-left: 85%;
+}
+
+
+/* tekst opmaak "A,O,C" */
+footer ul:first-of-type li a{
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: .1em;
+  font-weight: lighter;
+  text-transform: uppercase;
+
+  padding: 1em;
+  color: var(--color);
+  text-decoration: var(--decoration);
+}
+
+footer ul:first-of-type li {
+  height: 1.5em;
+}
+
+
+/* follow us.. tekst opmaak */
+footer h3{
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: .1em;
+  font-size: 1em;
+  
+  text-transform: uppercase;
+  padding: 2em 1em 1em;
+  color: var(--color);
+}
+
+
+/* formulier */
+footer p{
+  color: var(--color);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: .9em;
+  padding: 1em;
+}
+
+footer .submit-img{
+  width: 100%;
+  max-width: 250px;
+  padding: 0em 0.9em 0em;
+}
+
+footer form {
+  padding: 1em;
+}
+
+footer input{
+  background: transparent;
+  border: var(--border);
+  border-bottom: .1em solid;
+  padding: 1em 0 .8em;
+  text-align: center;
+  font-size: .8em;
+  outline: none;
+  color: var(--color);
+}
+
+footer input:first-of-type{
+  width: 100%;
+}
+
+footer input:nth-of-type(2){
+  width: 50%;
+  
+} 
+
+
 
 /* social media links/icons */
-footer img{
-  width: 4em;
+footer a img{
+  width: 4.2em;
 }
 
-/* footer hr opmaak in */
+/* hr opmaak */
 footer hr{
-  border-color: gray;
-  border-bottom: 0em;
-  margin: 1.1em 0rem;
-  width: 17em;
-}
-
-/* about.. opmaak in footer */
-footer ul:first-of-type li {
   margin: 2em 0em 0em;
+  border-color: var(--border-color2);
 }
 
-/* footer tekst a opmaak, kleur etc*/
-footer a{
-  color: #ffffff;
-  margin: 2.5em 0em 2em;
-  text-decoration: none;
+/* plaatsing legal.. in footer */
+footer ul:nth-of-type(2){
+  padding: 2em 1em 3.5em;
 }
 
-/* footer, legal.. plaatsing */
-footer ul {
-  margin-top: 3em;
-  margin-bottom: 3em;
+/* laatste tekst stuk in footer*/
+footer ul:nth-of-type(2) li{
+  font-size: .7em;
+  letter-spacing: .1em;
+  padding: .5em;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Footer img (uiteinde) */
-footer ul img{
-  width: 12em;
-  margin: 8em 1.5em 1em;
+footer ul:nth-of-type(2) li a{
+  color: #c6c6c6;;
+  text-decoration: var(--decoration);
 }
 
-
-
-
-/* responsief (galaxy note 3) */
-@media (min-width: 360px) {
-/* footer hr opmaak in */
-  footer hr{
-    width: 19em;
-  }
-  /* Footer img (uiteinde) */
-  footer ul img{
-    width: 15em;
-  }
+/* laatste img in footer */
+footer img{
+  width: 100%;
+  height: 4em;
+  object-fit: contain;
 }
-
-/* responsief (iphone /6/7/8) */
-@media (min-width: 375px) {
-/* footer hr opmaak in */
-  footer hr{
-    width: 20em;
-  }
-}
-
-
-
-
-
 
 
 
@@ -765,274 +641,203 @@ footer ul img{
 
 
 /*************************************************************************/
-/* **************************** 2e pagina ****************************** */
-/****************************** Mona Lisa ********************************/
+/* ******************** MonaLisa - main section 1 ********************** */
+/*************************************************************************/
 
-/* 1e background-color voor begin scherm*/
+/* main section 1 vormgeving */
 .monalisa section:first-of-type{
-  background-color: #1a1a1a;
   display: grid;
-  height: 50em;
+  height: 100vh;
+  background-color: var(--background-color4);
 }
 
-/* 1e titel h2 (from the mona..) */
+/* titel h2 vormgeving */
 .monalisa section:nth-of-type(1) h2:first-of-type{
-  color: #ffffff;
-  font: 500 1.88em/1.27 LouvreSerif,Georgia,Times New Roman,serif;
+  font: 1.8em LouvreSerif,Georgia,Times New Roman,serif;
   text-align: center;
-  margin: 4.5em 1em;
-  margin-left: 1.5em;
+  padding: 8em 1em 1em;
+  color: var(--color);
 }
 
-/* 1e p tekst (the salle....)*/
+/* eerste p tekst bij section 1 vormgeving*/
 .monalisa section:nth-of-type(1) p:first-of-type{
-  color: #ffffff;
-  font-family: LouvreSerif,Georgia,Times New Roman,serif;
+  font-family: Arial, Helvetica, sans-serif;
   text-align: center;
-  margin-top: -7.5em;
+  padding: 0em 0em 3em;
+  color: var(--color);
 }
 
-/* 1e img (mona lisa portret...)*/
+/* img bij begin scherm */
 .monalisa section:nth-of-type(1) img:first-of-type{
   width: 100%;
-  height: 29em;
+  height: 70vh;
   padding: 2em;
-  background-color: #1a1a1a;
+  background-color: var(--background-color4);
 }
 
-/* 1e p element (room 711...) */
-.monalisa section:nth-of-type(2) p:nth-of-type(1){
- margin-top: 7.5em;
+/* laatste p tekst bij section 2 */
+.monalisa section:nth-of-type(2) h4:nth-of-type(1){
  font-size: 1em;
- padding: .10em 2em; 
+ font-weight: lighter;
+ padding: 18em 2em 3em; 
 }
 
-/* 1e (2e p element, room 711...) */
-.monalisa section:nth-of-type(3) p:nth-of-type(1){
-  color: #000000;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-weight: bold;
-  font-size: 1em;
-  padding: 2.5em;
+/* p tekst bij section 3  */
+.monalisa section:nth-of-type(3) h4:nth-of-type(1){
+  font-family: Arial, Helvetica, sans-serif;
   text-align: center;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 1.7em;
+  padding: 1em 2.5em 5em;
+}
+
+.monalisa main hr{
+  border-bottom: 0em;
+  border-color: var(--border-color2);
 }
 
 
-
-
-
-
-
-
-
-
-
 /*************************************************************************/
-/* ************************* did you know (blue) ************************ */
+/* ******************** MonaLisa - article 1 ********************** */
 /*************************************************************************/
 
-/* h4 "did you know" styling */
-.monalisa section:nth-of-type(4){
-  background-color: #f6f6f6 ;
+/* opmaak article 1 */
+.monalisa article:first-of-type{
+  background-color: var(--background-color2);
 }
 
-/* kopje "did you know" styling */
-.monalisa section:nth-of-type(4) h4:first-of-type{
-  padding: var(--p-padding);
-  color: #0000e0;
+.monalisa article:first-of-type h4:first-of-type{
   position: relative;
   top: 2em;
+  color: #0000e0;
+  padding: var(--p-padding);
 }
 
-/* hr styling "did you know" */
-.monalisa section:nth-of-type(4) hr:first-of-type{
-  background-color: #f6f6f6;
-  opacity: 20%;
-  position: relative;
-  top: -.6em;
-  left: 9em;
-  width: 9em;
+
+
+
+
+
+
+
+.monalisa article hr{
+  width: 90%;
+  margin-top: calc(-0.5em);
+  /* position: relative;
+  top: calc(-0.5em);
+  width: 100%;
+  margin-left: 4em; */
+  /* left: calc(16px + var(--body-padding)); */
+  border-bottom: 0em;
+  border-color: var(--border-color2);
 }
 
-/* h3 tekst "mona lisa" */
-.monalisa section:nth-of-type(4) h3:first-of-type{
+
+
+
+
+
+
+
+
+.monalisa article h3{
   font-size: 1.5em;
   font-weight: lighter;
-  padding: 1.2em;
-  margin: .5em 0em;
+  padding: 2em 1.5em 0em;
 }
 
-/* p tekst styling */
-.monalisa section:nth-of-type(4) p:first-of-type{
-  padding: 1.2em;
+.monalisa article:first-of-type p:first-of-type{
+  padding: 1em 2em 1em;
   font-size: 1.3em;
-  font-family: 'Times New Roman', Times, serif;
-  color: #000000d0;
-  font-weight: lighter;
-  margin-top: -2.2em;
+  font-weight: bold;
+  font: 300 18px/1.61 Roboto,Open Sans,Arial,Helvetica,sans-serif;
 }
 
 /* image styling */
-.monalisa section:nth-of-type(4) img:first-of-type{
-  padding: 1em ;
-  height: 18em ;
-  margin: 1.5em 0em 3em;
+.monalisa article:first-of-type img{
   width: 100%; 
+  padding: 1em 1em 3em ;
+  height: 100% ;
 }
-
-
-
-
-
-
-
 
 
 
 
 /*************************************************************************/
-/* ****************************** a new blue  *************************** */
+/* ********************* article a new blue  *************************** */
 /**************************************************************************/
 
-/* kopje h2 + p teksten   1 */
-.monalisa section:nth-of-type(5) h2:nth-of-type(1){
-  font: 500 1.88em/1.27 LouvreSerif,Georgia,Times New Roman,serif;
-  margin: 2em 1em 0em;
-  margin-left: 1em;
-}
 
-.monalisa section:nth-of-type(5) p{
-  padding: var(--p-padding); 
-  margin-top: -1em;
-}
-
-/* kopje h2 + p teksten   2 */
-.monalisa section:nth-of-type(5) h2:nth-of-type(2){
-  font: 500 1.88em/1.27 LouvreSerif,Georgia,Times New Roman,serif;
-  margin: .9em 2em 0em;
-  margin-left: 1em;
-}
-
-/* kopje h2 + p teksten   3 */
-.monalisa section:nth-of-type(5) h2:nth-of-type(3){
-  font: 500 1.88em/1.27 LouvreSerif,Georgia,Times New Roman,serif;
-  margin: .9em 2em 0em;
-  margin-left: 1em;
+.monalisa article:nth-of-type(2) p{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  font-size: .8em;
+  padding: 1em 2.5em 1em;
+  line-height: 1.7em;
 }
 
 /* image styling */
-.monalisa section:nth-of-type(5) img:first-of-type{
-  height: 35em ;
-  margin-top: 3em ;
-  width: 100%;
+.monalisa article:nth-of-type(2) img{
+  width: 100%; 
+  padding: 1em 1em 3em ;
+  height: 100% ;
 }
-
-
-
-
-
-
-
-
-
 
 
 /*************************************************************************/
 /* ****************************** did you know (red) *************************** */
 /**************************************************************************/
 
-/* h4 did you know styling (red) */
-.monalisa section:nth-of-type(6){
-  background-color: #f6f6f6 ;
-}
 
-/* kopje "did you know" styling */
-.monalisa section:nth-of-type(6) h4:first-of-type{
-  padding: var(--p-padding);
-  color: red;
+.monalisa article:nth-of-type(3) h4{
   position: relative;
   top: 2em;
+  color: red;
+  padding: var(--p-padding);
 }
 
-/* hr styling "did you know" */
-.monalisa section:nth-of-type(6) hr:first-of-type{
-  background-color: #f6f6f6;
-  opacity: 20%;
-  position: relative;
-  top: -.6em;
-  left: 9em;
-  width: 9em;
+.monalisa article:nth-of-type(3) p:first-of-type{
+  padding: 1em 2em 1em;
+  font-size: 1.3em;
+  font-weight: bold;
+  font: 300 18px/1.61 Roboto,Open Sans,Arial,Helvetica,sans-serif;
 }
 
-/* h3 tekst "painting" */
-.monalisa section:nth-of-type(6) h3:first-of-type{
-  font-size: 1.5em;
-  font-weight: lighter;
-  padding: 1.3em;
-  margin: .7em 0em;
-}
-
-/* p tekst styling */
-.monalisa section:nth-of-type(6) p:first-of-type{
-  padding: 1.3em;
-  font-size: 1.2em;
-  font-family: 'Times New Roman', Times, serif;
-  color: #000000d0;
-  font-weight: lighter;
-  margin-top: -2.8em;
-}
-
-/* image styling (portret)*/
-.monalisa section:nth-of-type(6) img:first-of-type{
-  padding: 1em ;
-  height: 20em ;
-  margin: 1.5em 0em 6em;
-  width: 100%;
-}
-
-/* kleine info over portret p element*/
-.monalisa section:nth-of-type(6) p:nth-of-type(2){
-  margin-top: -13em;
-  font-size: .8em;
-  padding: 5em 2em; 
+/* image styling */
+.monalisa article:nth-of-type(3) img{
+  width: 100%; 
+  padding: 1em 1em 1.5em ;
+  height: 100% ;
 }
 
 
-/*************************************************************************/
-/* ****************************** formulier *************************** */
-/**************************************************************************/
-
-.formulier{
-  color: white;
-  font-family:'EB Garamond',Georgia,Times New Roman,serif;
-  font-size: 1.1em;
-  margin: 2em 0rem;
-}
-
-fieldset{
-  border-color: #008573;
-  padding: 0em 4em;
-}
-
-legend{
-  color: white;
+.monalisa article:nth-of-type(3) p:nth-of-type(2) {
   font-size: 1em;
-  margin: 1.5em;
-}
+  font-weight: lighter;
+  padding: 0em 2em 3em; 
 
-label{
-  color: white;
-  margin: 1.7em;
-}
 
-form [type=submit]{
-  border: none;
-  color: white;
-  background-color: #008573;
-  font-size: .7em;
-  padding: .7em;
-  border-radius: 2em;
-  width: 8em;
-  margin: 1.5em;
-  margin-left: 16.2em;
-}
+/* shortcuts 
+:root{
+  --p-padding: 2em;
+  --decoration: none;
+  --list: none;
+  --border:none;
+
+  --border-color:grey;
+  --border-color2:rgba(128, 128, 128, 0.349);
+
+
+  --color:#ffffff;
+  --color2:white;
+  --color3:#909090;
+  --color4: #000000;
+
+  --background-color:#000000;
+  --background-color2:#f6f6f6;
+  --background-color3:#008573;
+  --background-color4:#1a1a1a;
+
+  --font-familyBold: Arial, Helvetica, sans-serif;
+} */

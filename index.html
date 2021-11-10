@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="Louvre" content="Glora Kwako">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" type="image/svg+xml" href="images/minilogo.jpg">
 
 
@@ -15,45 +15,89 @@
 </head>
 
 <body class="homepage">
-
+	<!-- hier is de hamburger menu (links boven) -->
 	<header>
-		<!-- in de hamburger menu -->
 		<nav>
+			<button class="icon">
+				<img src="images/menu.png" alt="hamburger menu">
+			</button>
+
 			<ul class="menu">
-				<li><button><img class="back-menu" src="images/kruisje.png" alt="menu kruisje"></button></li>
+				<li>
+					<button class="icon-x">
+						<img src="images/kruisje.png" alt="menu kruisje">
+					</button>
 
-				<!-- Bron: https://www.youtube.com/watch?v=UOGvJhvLUg0 -->
-				<input type="text" class="input" placeholder="Search...">
+					<!-- Bron: https://www.youtube.com/watch?v=UOGvJhvLUg0 -->
+					<input type="text" class="input" placeholder="Search...">
 
-				<hr>
-
-				<li><a href="https://www.louvre.fr/en/visit">Visit</a> <img src="images/pijl.jpg"
-						alt="pijl naar rechts"></li>
-				<li><a href="https://www.louvre.fr/en/explore">Explore</a><img src="images/pijl.jpg"
-						alt="pijl naar rechts"></li>
-				<li><a href="https://www.louvre.fr/en/what-s-on">What's on </a><img src="images/pijl.jpg"
-						alt="pijl naar rechts"></li>
-
-				<hr>
-
-				<img class="online" src="images/onlineb.jpg" alt="online boutique afbeelding">
-
-				<a href="https://www.facebook.com/museedulouvre"><img src="images/fb.jpg" alt=""></a>
-				<a href="https://www.instagram.com/museelouvre/"><img src="images/insta.jpg" alt=""></a>
-				<a href="https://twitter.com/museelouvre"><img src="images/tweet.jpg" alt=""></a>
-				<a href="https://www.youtube.com/user/louvre"><img src="images/yt.jpg" alt=""></a>
-				<a href="https://www.pinterest.fr/museedulouvre/_created/"><img src="images/pint.jpg" alt=""></a>
-				<a href="https://www.linkedin.com/company/musee-du-louvre/?originalSubdomain=fr"><img
-						src="images/link.jpg" alt=""></a>
-
-				<img src="images/louvre.jpg" alt="louvre">
-
-			</ul>
-			<!--zichtbare menu -->
-			<ul>
-				<li><button><img class="icon" src="images/menu.png" alt="hamburger menu"></button></li>
-				<li><a href="file:///Users/gloriakwako/Desktop/Frontend%20Development/Eindopdr/index.html">Louvre</a>
 				</li>
+
+				<li>
+					<hr>
+				</li>
+
+				<li>
+					<a href="https://www.louvre.fr/en/visit">
+						Visit
+						<img src="images/pijl.png" alt="pijl naar rechts">
+					</a>
+					<a href="https://www.louvre.fr/en/explore">
+						Explore
+						<img src="images/pijl.png" alt="pijl naar rechts">
+					</a>
+					<a href="https://www.louvre.fr/en/what-s-on">
+						What's on
+						<img src="images/pijl.png" alt="pijl naar rechts">
+					</a>
+				</li>
+
+				<li>
+					<hr>
+				</li>
+
+				<li>
+					<a href="#">
+						<img class="online" src="images/onlineb.jpg" alt="online boutique afbeelding">
+					</a>
+				</li>
+
+				<li>
+					<hr>
+				</li>
+				<li>
+					<ul class="media">
+						<li>
+							<a href="https://www.facebook.com/museedulouvre">
+								<img src="images/fb.png" alt="">
+							</a>
+
+							<a href="https://www.instagram.com/museelouvre/">
+								<img src="images/insta.png" alt="">
+							</a>
+
+							<a href="https://twitter.com/museelouvre">
+								<img src="images/tweet.png" alt="">
+							</a>
+
+							<a href="https://www.youtube.com/user/louvre">
+								<img src="images/yt.png" alt="">
+							</a>
+
+							<a href="https://www.pinterest.fr/museedulouvre/_created/">
+								<img src="images/pint.png" alt="">
+							</a>
+
+							<a href="https://www.linkedin.com/company/musee-du-louvre/?originalSubdomain=fr">
+								<img src="images/link.png" alt="">
+							</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+
+			<ul>
+				<li><a href="#">Louvre</a></li>
 				<li><button> Tickets </button></li>
 			</ul>
 
@@ -73,17 +117,21 @@
 			<video autoplay loop muted>
 				<source src="video/louvreMovie.mov" type="video/mp4">
 			</video>
+
 			<h2> ESCAPE WITH THE LOUVRE </h2>
+
 			<button> Book tickets </button>
 		</section>
 
 		<section>
-			<img src="images/minilogo.jpg" alt="louvrelogo">
-			<h3>INFORMATION REGARDING COVID-19 </h3>
+			<h3>
+				<img src="images/minilogo.jpg" alt="louvrelogo">
+				INFORMATION REGARDING COVID-19
+			</h3>
 			<p>Time-slot bookings are compulsory, including for free-admission visitors. In accordance with government
-				recommendations, all visitors to the Louvre aged 18 and over must show a Health Pass. From 30 September,
-				this obligation will apply to all visitors aged 12 and over. All visitors aged 11 and over must wear
-				face masks. </p>
+				recommendations, all visitors to the Louvre aged 12 years and two months or older must show a Health
+				Pass. All visitors aged 11 and over must wear face masks.
+			</p>
 
 			<a href="https://www.louvre.fr/en/visit/covid-19-advice-for-visitors"> Find out more ￫ </a>
 
@@ -95,17 +143,40 @@
 			<h2> HIGHLIGHTS </h2>
 
 			<ul>
-				<li><img src="images/homeimg2.jpg" alt="gallery"><a
-						href="file:///Users/gloriakwako/Desktop/Frontend%20Development/Eindopdr/monalisa.html"> From the
-						'Mona Lisa' to <br> the wedding feast at cana ￫ </a></li>
-				<li><img src="images/stan.jpg" alt="gallery">
-					<h4>Welcome to the Louvre ￫ </h4>
+				<li>
+					<img src="images/homeimg2.jpg" alt="gallery">
+					<h4>Article</h4>
+					<a href="file:///Users/gloriakwako/Desktop/Frontend%20Development/Eindopdracht_fed/monalisa.html">
+						From the 'Mona Lisa' to <br> the wedding feast at cana
+					</a>
+					<h5>In The Palace</h5>
 				</li>
-				<li><img src="images/pira.jpg" alt="gallery">
-					<h4> Exhibition ￫ </h4>
+
+				<li>
+					<img src="images/stan.jpg" alt="gallery">
+					<h4>Guided Tour</h4>
+					<a href="https://www.louvre.fr/en/what-s-on/guided-tours/welcome-to-the-louvre">
+						Welcome to the Louvre
+					</a>
+					<h5>Masterpieces</h5>
 				</li>
-				<li><img src="images/kunst.jpg" alt="gallery">
-					<h4> Paris-athens the birth <br> of modern Greece ￫ </h4>
+
+				<li>
+					<img src="images/pira.jpg" alt="gallery">
+					<h4>Visit</h4>
+					<a href="https://www.louvre.fr/en/visit">
+						Everything you need to know
+					</a>
+					<h5>Hours and Admission</h5>
+				</li>
+
+				<li>
+					<img src="images/kunst.jpg" alt="gallery">
+					<h4>Exhibition</h4>
+					<a href="https://www.louvre.fr/en/what-s-on/exhibitions/paris-athens">
+						Paris-athens the birth <br> of modern Greece
+					</a>
+					<h5>From 30 September 2021 to 7 February 2022</h5>
 				</li>
 			</ul>
 
@@ -117,13 +188,13 @@
 				of our <strong> <u>visitor trails </u> </strong> to follow a theme-based tour? And when you need a
 				break, where better than the
 				museum’s restful <strong><u> gardens?</u> </strong> </p>
-
 		</section>
 
-		<section class="scroll"></section>
+		<section class="scroll">
+			<h2>scroll</h2>
+		</section>
 
 		<section>
-
 			<div class="container">
 				<div class="titel">
 					<h2> DELVE INTO THE LOUVRE </h2>
@@ -141,29 +212,47 @@
 					<img src="images/gal6.jpg" alt="tekening">
 					<img src="images/gal8.jpg" alt="vrouw">
 					<img src="images/gal10.jpg" alt="vrouw">
-				</div>
 
+				</div>
 				<button type="button"> Explore </button>
+			</div>
 		</section>
 	</main>
 
 	<footer>
 		<ul>
-			<li><a href="https://www.louvre.fr/en/visit/museum-rules"> ABOUT </a></li>
-			<li><a href="https://presse.louvre.fr/fr/?lang=en"> OUR WEBSITES </a></li>
-			<li><a href="https://www.louvre.fr/en/contact-us"> CONTACT </a></li>
+			<li><a href="https://www.louvre.fr/en/visit/museum-rules"> ABOUT
+					<img src="images/pijl.png" alt="pijl naar rechts">
+				</a></li>
+			<li><a href="https://presse.louvre.fr/fr/?lang=en"> OUR WEBSITES
+					<img src="images/pijl.png" alt="pijl naar rechts">
+				</a></li>
+			<li><a href="https://www.louvre.fr/en/contact-us"> CONTACT
+					<img src="images/pijl.png" alt="pijl naar rechts">
+				</a></li>
 		</ul>
 
 		<hr>
 
 		<h3> FOLLOW US </h3>
-		<a href="https://www.facebook.com/museedulouvre"><img src="images/fb.jpg" alt=""></a>
-		<a href="https://www.instagram.com/museelouvre/"><img src="images/insta.jpg" alt=""></a>
-		<a href="https://twitter.com/museelouvre"><img src="images/tweet.jpg" alt=""></a>
-		<a href="https://www.youtube.com/user/louvre"><img src="images/yt.jpg" alt=""></a>
-		<a href="https://www.pinterest.fr/museedulouvre/_created/"><img src="images/pint.jpg" alt=""></a>
-		<a href="https://www.linkedin.com/company/musee-du-louvre/?originalSubdomain=fr"><img src="images/link.jpg"
+		<a href="https://www.facebook.com/museedulouvre"><img src="images/fb.png" alt=""></a>
+		<a href="https://www.instagram.com/museelouvre/"><img src="images/insta.png" alt=""></a>
+		<a href="https://twitter.com/museelouvre"><img src="images/tweet.png" alt=""></a>
+		<a href="https://www.youtube.com/user/louvre"><img src="images/yt.png" alt=""></a>
+		<a href="https://www.pinterest.fr/museedulouvre/_created/"><img src="images/pint.png" alt=""></a>
+		<a href="https://www.linkedin.com/company/musee-du-louvre/?originalSubdomain=fr"><img src="images/link.png"
 				alt=""></a>
+
+		<hr>
+
+		<h3> Membership</h3>
+		<p>Become a Friend of the Louvre</p>
+		<img class="submit-img" src="images/submit.png" alt="Amis du louvre">
+
+		<form>
+			<input type="email" placeholder="example@gmail.com" autocomplete="off" required>
+			<input type="submit" value="Subscribe">
+		</form>
 
 		<hr>
 
@@ -173,12 +262,15 @@
 			<li><a href="https://www.louvre.fr/en/cookie-management-and-policy"> Cookies </a></li>
 			<li><a href="https://www.louvre.fr/credits"> Credits (in French) </a></li>
 			<li><a href="https://www.louvre.fr/en"> Copyrights </a></li>
-			<img src="images/louvre.jpg" alt="louvre">
+
 		</ul>
 
+		<img src="images/louvre.jpg" alt="louvre">
 
 	</footer>
+
 	<script src="scripts/script.js"></script>
+
 </body>
 
 </html>

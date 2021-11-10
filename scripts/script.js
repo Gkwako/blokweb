@@ -1,25 +1,47 @@
 // JavaScript Document
 console.log("Louvre");
 
-var menuButton = document.querySelector(".icon");
 var hamburgerMenu = document.querySelector(".menu");
+var menuButton = document.querySelector(".icon");
 
-var menuClose = document.querySelector(".back-menu")
-
-
-// Click menuButton aan (Bron: Alex)
-menuButton.addEventListener("click", hamburgerMenuopen);
+var buttonClose = document.querySelector(".icon-x");
 
 
-function hamburgerMenuopen(){
-    hamburgerMenu.classList.toggle("visible");
+var lastScrollTop = 0;
+nav = document.querySelector("nav");
+
+
+
+// Click on menu Button
+
+menuButton.addEventListener("click", buttonOn);
+function buttonOn(){
+    hamburgerMenu.classList.add("visible");
     console.log("menu open");
 }
 
 
-menuClose.addEventListener("click", Closed);
-function Closed(){
-    hamburgerMenu.classList.toggle("invisible")
+// Click off menu Button (bron: Alex)
 
-    console.log("menu dicht");
+buttonClose.addEventListener("click", buttonOff);
+function buttonOff(){
+    hamburgerMenu.classList.remove("visible")
+    console.log("menu close");
 }
+
+
+// Nav vanish (bron: https://www.youtube.com/watch?v=JEBgqbZWYIQ)
+window.addEventListener("scroll", vanish);
+function vanish(){
+    var scrollTop = window.pageYOffset
+    document.documentElement.scrollTop;
+    
+    if (scrollTop > lastScrollTop){
+        nav.style.top= "-8em";
+    } else {
+        nav.style.top= "0";
+    } 
+}
+
+
+
