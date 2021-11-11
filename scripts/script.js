@@ -30,7 +30,8 @@ function buttonOff(){
 }
 
 
-// Nav vanish (bron: https://www.youtube.com/watch?v=JEBgqbZWYIQ)
+
+// Nav verdwijnt (bron: https://www.youtube.com/watch?v=JEBgqbZWYIQ)
 window.addEventListener("scroll", vanish);
 function vanish(){
     var scrollTop = window.pageYOffset
