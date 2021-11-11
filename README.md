@@ -36,19 +36,32 @@ surface 🕹 🧩
 <summary>uitwerken voor kick-off werkgroep</summary>
 
 ### Je opdracht:
-Voor deze opdracht ga ik de bekendste museum "de Louvre" na maken omdat ik afgelopen zomer hier geweest ben en een super leuke tijd had gehad. De reden waarom deze museum mij aansprak is door de Mona Lisa, wat ik al een tijdje wilde gaan zien. De website heeft een mooie layout waar ik goed mee kan werken en heeft ook zijn eigen moeilijkheidsgraad, ben benieuwd hoe dit gaat aflopen...
+Voor deze opdracht heb ik gekozen om het Louvre museum na te maken, omdat ik de afgelopen zomer hier geweest ben en een super leuke tijd had gehad. De reden waarom deze museum mij aansprak is door de Mona Lisa, wat ik al een tijdje wilde gaan zien. De website heeft een mooie layout waar ik goed mee kan werken en heeft ook zijn eigen moeilijkheidsgraad, ben benieuwd hoe dit gaat aflopen...
 
 <a href="https://www.louvre.fr/en">link Louvre</a>
 
 #### Screenshot(s) home-pagina (small screen): 
-Hieronder zie je een screenshot van de home page van de website op z'n geheel. 
+Homepagina van de Louvre.
 
-<img src="RMimages/louvre1.png" width="340px" alt="home-page">
-
+<img src="RMimages/home-page.png" width="340px" alt="homepage">
+<img src="RMimages/hp-1.png" width="340px" alt="homepage">
+<img src="RMimages/hp-2.png" width="340px" alt="homepage">
+<img src="RMimages/hp-3.png" width="340px" alt="homepage">
+<img src="RMimages/hp-4.png" width="340px" alt="homepage">
+<img src="RMimages/hp-5.png" width="340px" alt="homepage">
+<img src="RMimages/hp-6.png" width="340px" alt="homepage">
 
 #### Screenshot(s) mona-lisa-page (small screen):
- Hier is de 2e screenshot, ik heb gekozen om de mona lisa home page na te gaan maken als 2e pagina. 
-<img src="RMimages/louvre2.png" width="340px" alt="home-page">
+Artikel pagina over de Mona Lisa.
+
+<img src="RMimages/home-page2.png" width="340px" alt="monalisa">
+<img src="RMimages/hp2-1.png" width="340px" alt="monalisa">
+<img src="RMimages/hp2-2.png" width="340px" alt="monalisa">
+<img src="RMimages/hp2-3.png" width="340px" alt="monalisa">
+<img src="RMimages/hp2-4.png" width="340px" alt="monalisa">
+<img src="RMimages/hp2-5.png" width="340px" alt="monalisa">
+<img src="RMimages/hp2-6.png" width="340px" alt="monalisa">
+<img src="RMimages/hp2-7.png" width="340px" alt="monalisa">
  
 </details>
 
@@ -62,32 +75,40 @@ Hieronder zie je een screenshot van de home page van de website op z'n geheel.
 
 ### de hele pagina 1 & 2: 
 Hier is de volledige pagina te zien op een mobiele formaat.
-<img src="RMimages/louvrePage.png" width="375px" alt="louvre-pagina">
-<img src="RMimages/louvrePage2.png" width="375px" alt="louvre-pagina">
+<img src="RMimages/louvre-homepage.png" width="375px" alt="louvre-pagina">
+
+### 2e pagina : 
+Hier is de volledige pagina te zien op een mobiele formaat.
+<img src="RMimages/artikel-homepage.png" width="375px" alt="mona lisa -pagina">
+
 
 ### breakdown onderdelen: 
-Deze pagina's heb ik HTML onderdelen geven om zo het werk makkelijker te verdelen in het programma. 
-<img src="RMimages/louvre3.png" width="375px" alt="louvre-pagina">
-<img src="RMimages/louvre4.png" width="375px" alt="louvre-pagina">
+
+<img src="RMimages/louvre-breakdown.png" width="375px" alt="breakdown van hele plaatje">
+
+<img src="RMimages/ml-breakdown.png" width="375px" alt="breakdown van hele plaatje">
+
 
 ### ongeïnteresseerde onderdelen 1: 
-Deze zijn de onderdelen die ik niet mee gaan nemen.
-<img src="RMimages/louvp12.png" width="375px" alt="breakdown van een dynamisch deel">
-<img src="RMimages/louvp11.png" width="375px" alt="breakdown van nog een dynamisch deel">
+Deze onderdelen neem ik niet mee bij het bouwen van de website.
 
-<img src="RMimages/louvp14.png" width="375px" alt="breakdown van een dynamisch deel">
-<img src="RMimages/louvp13.png" width="375px" alt="breakdown van nog een dynamisch deel">
+<img src="RMimages/louvre-1.png" width="375px" alt="breakdown van een dynamisch deel">
+<img src="RMimages/louvre-2.png" width="375px" alt="breakdown van nog een dynamisch deel">
 
-<img src="RMimages/louvp15.png" width="375px" alt="breakdown van nog een dynamisch deel">
+<img src="RMimages/louvre-3.png" width="375px" alt="breakdown van een dynamisch deel">
+<img src="RMimages/louvre-4.png" width="375px" alt="breakdown van nog een dynamisch deel">
+
+<img src="RMimages/louvre-5.png" width="375px" alt="breakdown van nog een dynamisch deel">
+
 
 ### ongeïnteresseerde onderdelen 2: 
-<img src="RMimages/louvp22.png" width="375px" alt="breakdown van een dynamisch deel">
-<img src="RMimages/louvp211.png" width="375px" alt="breakdown van nog een dynamisch deel">
+<img src="RMimages/ml-1.png" width="375px" alt="breakdown van een dynamisch deel">
+<img src="RMimages/ml-2.png" width="375px" alt="breakdown van nog een dynamisch deel">
 
-<img src="RMimages/louvp23.png" width="375px" alt="breakdown van een dynamisch deel">
-<img src="RMimages/louvp24.png" width="375px" alt="breakdown van nog een dynamisch deel">
+<img src="RMimages/ml-3.png" width="375px" alt="breakdown van een dynamisch deel">
+<img src="RMimages/ml-4.png" width="375px" alt="breakdown van nog een dynamisch deel">
 
-<img src="RMimages/louvp25.png" width="375px" alt="breakdown van nog een dynamisch deel">
+<img src="RMimages/ml-5.png" width="375px" alt="breakdown van nog een dynamisch deel">
 
 
 </details>
@@ -111,7 +132,7 @@ Ik ben deze week begonnen aan de navigatiebalk (de header), hieronder zie je de 
 <img src="RMimages/navv1.png" width="375px" alt="navv1">
 
 
-Ik liep op een geven moment wel vast, waardoor ik hulp kreeg van een student assistent en ook heb ik verder gebruik gemaakt van Youtube. 
+Ik liep op een geven moment wel vast, waardoor ik hulp kreeg van een student assistent en ook heb ik verder gebruik gemaakt van Youtube filmpjes. 
 
 Hieronder zie je de 2e versie:
 <img src="RMimages/navv2b.png" width="375px" alt="navv2b">
@@ -148,8 +169,8 @@ Inmiddels is het gelukt om minder classes te gebruiken, daarvoor heb ik nth-of-t
 ### Verslag van meeting
 Vandaag heb ik mijn voortgang gesprek gehad, hier werd de onderstaande punten besproken waar ik aanpassingen in moet gaan doen. 
 
-- html en css code opschonen 
-- vaart maken met code schrijven
+- Html en css code opschonen 
+- Vaart maken met code schrijven
 - Beginnen aan 2e pagina
 
 
@@ -195,7 +216,7 @@ De geadviseerde manier om te surfen op internet voor hun is om sirri te gekrijge
 
 
 ### Test personen 
-samen met je groepje opstellen
+Samen met je groepje opstellen
 
 Test persoon 1:
 De hamburger menu kan niet getapt worden met de toetsenboard.
@@ -243,9 +264,28 @@ Hieronder zie je het eindresultaat van de website:
 ### Screenshot(s) 2e pagina
 <img src="RMimages/formulier.png" width="375px" alt="home">
 
+
+
+
+### Verslag van Eindgesprek
+Vandaag had ik mijn voortgang gesprek gehad, hier werden de onderstaande punten besproken waar ik aanpassingen in moet gaan doen. 
+
+- Click van menu op de button ipv de image zetten
+
+- margins + paddings + tops + lefts allemaal even weghalen en de boel laten _ademen_
+
+- CSS grote schoonmaak
+
+- menu ook transform -100%
+
+- form => input type submit
+
+- Errors uit validator halen
+
+- Vaart maken met code schrijven
+
+
 </details>
-
-
 
 
 
@@ -264,85 +304,3 @@ Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
 </details>
 
-
-
-
-<!--  
-<body class="homepage">
-	<!-- hier is de hamburger menu (rechts boven) -->
-	<header>
-		<nav id="menuToggle">
-			<ul>
-				<li><input type="checkbox" />
-
-					<span></span>
-					<span></span>
-					<span></span>
-
-					<ul>
-						<!-- Bron: https://www.youtube.com/watch?v=UOGvJhvLUg0 -->
-						<input class="search" type="text" name="" placeholder="Search...">
-
-						<hr>
-
-						<a href="https://www.louvre.fr/en/visit">
-							<li>Visit</li>
-						</a>
-						<a href="https://www.louvre.fr/en/explore">
-							<li>Explore</li>
-						</a>
-						<a href="https://www.louvre.fr/en/what-s-on">
-							<li>What's on</li>
-						</a>
-
-						<hr>
-
-						<a href="https://boutique.louvre.fr/?lang=en"><img src="images/onlineb.jpg"
-								alt="online boutique afbeelding">
-				</li></a>
-
-				<hr>
-
-				<h4>
-					<a href="https://www.facebook.com/museedulouvre"><img src="images/fb.jpg" alt=""></a>
-					<a href="https://www.instagram.com/museelouvre/"><img src="images/insta.jpg" alt=""></a>
-					<a href="https://twitter.com/museelouvre"><img src="images/tweet.jpg" alt=""></a>
-					<a href="https://www.youtube.com/user/louvre"><img src="images/yt.jpg" alt=""></a>
-					<a href="https://www.pinterest.fr/museedulouvre/_created/"><img src="images/pint.jpg" alt=""></a>
-					<a href="https://www.linkedin.com/company/musee-du-louvre/?originalSubdomain=fr"><img
-							src="images/link.jpg" alt=""></a>
-				</h4>
-
-				<li><img src="images/louvre.jpg" alt="louvre"></li>
-			</ul>
-			</li>
-
-			<li>
-				<ul>
-					<li><a href="#">Louvre</a></li>
-
-					<hr>
-
-				</ul>
-
-			</li>
-			<li>
-			<li><button> Tickets </button></li>
-			</li>
-
-			</ul>
-
-
-
-			<!-- hier is de navigatie menu -->
-
-
-
-
-			<ul>
-				<li><a href="https://www.louvre.fr/en/visit">VISIT</a></li>
-				<li><a href="https://www.louvre.fr/en/explore">EXPLORE</a></li>
-				<li><a href="https://www.louvre.fr/en/what-s-on">WHAT'S ON </a></li>
-			</ul>
-		</nav>
-	</header>

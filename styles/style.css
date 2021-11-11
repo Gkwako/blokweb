@@ -30,6 +30,8 @@
   --background-color4:#1a1a1a;
 
   --font-familyBold: Arial, Helvetica, sans-serif;
+
+  --scroll-percent: 0.494331;
 }
 
 
@@ -47,8 +49,8 @@ header nav > button{
 }
 
 /* buttonClose opmaak */
-header .icon-x{
-  
+header .menu .icon-x {
+  margin: -1em -0.8em 0em;
   background: none;
   border: none;
 }
@@ -87,19 +89,10 @@ header button > img{
   overflow-y: auto;
 }
 
-/* in hamburger menu "img kruisje" */
-.icon-x img:nth-of-type(1){
-  display: flex;
-  position: absolute;
-  top: .5em;
-  left: .5em;
-}
-
 
 /* search bar */
 .menu li > input{
   width: 100%;
-  margin-top: 3em;
   padding: 1.7em; 
   border-radius: .3em;
   border:var(--border);
@@ -108,6 +101,7 @@ header button > img{
 
 /* hamburger menu tekst vormgeving  */
 .menu a{
+  height: 3em;
   font-family: var(--font-familyBold);
   color: var(--background-color2);
   text-decoration: var(--decoration);
@@ -115,8 +109,7 @@ header button > img{
 
 /* alle li vormgeving in hamburger menu*/
 .menu li {
-  /* display: flex; */
-  margin: 1.3em;
+  margin: 1em;
   list-style: var(--list);
 }
 
@@ -139,11 +132,125 @@ header button > img{
 
 
 
-/* in hamburger menu "img van online boutique" grote*/
-.menu li .online{
+
+
+
+
+
+
+
+
+
+/* "online boutique" opmaak*/
+.menu li:nth-of-type(5) img:first-of-type{
   width: 95%;
-  margin: 1em ;
+  margin: 0em .4em -1em;
+  padding: 1em;
+  border-radius: 1.5em;
+  opacity: 75%;
 }
+
+.menu li:nth-of-type(5) a{
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: -4em;
+  padding: 2em;
+  width: 45%;
+  
+ 
+  /* top: -2.5em; */
+  /* padding: 2em;
+  font-size: 1.1em; */
+}
+
+.menu li:nth-of-type(5) a > img {
+ 
+  
+  /* max-width: 46%;
+  display: grid;
+  grid-template-rows: 1fr;
+
+  position: absolute;
+  left: 17.5em;
+  top: 1em;
+  margin-left: 85%; */
+
+  
+}
+
+
+/* "S,T" opmaak*/
+.menu li:nth-of-type(6) {
+  /* display: flex;
+  flex-direction: column; */
+  display: grid;
+  grid-template-rows: 1fr;
+
+}
+
+.menu li:nth-of-type(6) img {
+  max-width: 45%;
+  margin: -2.7em 0em -1em;
+  padding: 1em;
+  border-radius: 1.5em;
+  opacity: 75%;
+}
+
+.menu li:nth-of-type(6) a{
+  display: flex;
+  flex-direction: row;
+  height: 2em;
+
+  position: relative;
+  top: -6.5em;
+  margin-left: 50%; 
+ font-size: 1.1em;
+
+ 
+
+
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .menu li:nth-of-type(5) img:first-of-type{
+  position: relative;
+  top: -3.2em;
+  width: 5em;
+  margin-left: 70%;
+} */
+
+/* .menu li:nth-of-type(5) a{
+  position: relative;
+  top: -6em;
+  padding: 2em;
+  height: -0em;
+}
+
+
+.menu li:nth-of-type(5) a img:nth-of-type(2){
+  position: relative;
+  
+  margin-left: 7%;
+} */
+
+
+
 
 /* grote van img */
 .media img{
@@ -251,8 +358,7 @@ header ul:nth-of-type(3) a{
 .homepage section:nth-of-type(1) h2{
   position: absolute;
   text-align: center;
-  /* letter-spacing: .1em; */
-  bottom: 9em;
+  bottom: 8em;
   padding: 1.5em;
   color:white; 
   width: 100%;
@@ -350,8 +456,9 @@ header ul:nth-of-type(3) a{
 .homepage section:nth-of-type(3) ul{
   display: flex;
   overflow: auto;
-  height: 60vh;
+  height: 70vh;
   width: 100%;
+
   list-style:var(--list);
 }
 
@@ -359,7 +466,7 @@ header ul:nth-of-type(3) a{
 /* "scroll gallery" img vormgeving*/
 .homepage section:nth-of-type(3) li img{
   width: 19em; 
-  height: 59vh;
+  height: 69vh;
   border-radius: 1.3em;
   padding: 0.7em;
 }
@@ -424,7 +531,6 @@ header ul:nth-of-type(3) a{
   padding: 1.3em 2em 5em;
   color: var(--color3);
 }
-
 
 /* welcome to.. p element, dik gedrukt */
 strong{
@@ -512,7 +618,8 @@ div img{
 
 /* footer opmaak */
 footer{
-  padding:var(--p-padding);
+  padding: 0.1em 1em 1em;
+  /* padding:var(--p-padding); */
   background-color:var( --background-color);
 }
 
@@ -594,7 +701,6 @@ footer input:first-of-type{
 
 footer input:nth-of-type(2){
   width: 50%;
-  
 } 
 
 
@@ -675,6 +781,7 @@ footer img{
   background-color: var(--background-color4);
 }
 
+
 /* laatste p tekst bij section 2 */
 .monalisa section:nth-of-type(2) h4:nth-of-type(1){
  font-size: 1em;
@@ -692,10 +799,8 @@ footer img{
   padding: 1em 2.5em 5em;
 }
 
-.monalisa main hr{
-  border-bottom: 0em;
-  border-color: var(--border-color2);
-}
+
+
 
 
 /*************************************************************************/
@@ -704,6 +809,10 @@ footer img{
 
 /* opmaak article 1 */
 .monalisa article:first-of-type{
+  background-color: var(--background-color2);
+}
+
+.monalisa article:nth-of-type(3){
   background-color: var(--background-color2);
 }
 
@@ -722,15 +831,9 @@ footer img{
 
 
 .monalisa article hr{
-  width: 90%;
-  margin-top: calc(-0.5em);
-  /* position: relative;
-  top: calc(-0.5em);
-  width: 100%;
-  margin-left: 4em; */
-  /* left: calc(16px + var(--body-padding)); */
-  border-bottom: 0em;
-  border-color: var(--border-color2);
+  margin-top: -0.6em;
+  margin-left: 11em;
+  opacity: 20%;
 }
 
 
